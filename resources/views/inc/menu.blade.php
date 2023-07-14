@@ -21,6 +21,9 @@
                 <a class="nav-link" href="{{route('index')}}">Home</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="{{route('OurSolution')}}">OurSolution</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="{{route('WhoWeAre')}}">Who we are</a>
             </li>
             <li class="nav-item">

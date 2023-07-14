@@ -4,13 +4,13 @@
             @forelse($games as $game)
                 <div class="col-lg-3 col-12">
                     <div class="card shadow my-3">
-                        <a href="{{route('post',["slug"=>$game->slug])}}">
+                        <a href="{{route('game',["slug"=>$game->slug])}}">
                             <img src="{{ Voyager::image($game->getThumbnail($game->image, 'cropped')) }}"
                                  class="card-img-top post_image_cover"/>
                         </a>
                         <div class="card-body text-center">
                             <b class="d-block text-white my-3">{{$game->getTranslatedAttribute('title',App::getLocale(), 'fallbackLocale')}}</b>
-                            <a href="{{route('post',["slug"=>$game->slug])}}"
+                            <a href="{{route('game',["slug"=>$game->slug])}}"
                                class="btn btn-primary">{{__("messages.readMore")}}</a>
                         </div>
                     </div>
