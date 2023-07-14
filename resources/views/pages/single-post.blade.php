@@ -9,7 +9,8 @@
 ])
 @endsection
 
-<div class="container p-5">
+<div class="container p-5 text-white">
+    <br/><br/><br/>
     <div class="card shadow" dir="{{App::getLocale()=="en"?"ltr":"rtl"}}">
 
         <div class="card-body">

@@ -28,6 +28,8 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
+
+
 </head>
 <body data-spy="scroll" data-target="#navbarCollapse" class="bg-gray-800">
 @if(setting('site.loader'))

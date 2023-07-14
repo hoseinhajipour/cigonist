@@ -1,3 +1,1 @@
-<div>
-    {{-- If you look to others for fulfillment, you will never truly be fulfilled. --}}
-</div>
+<livewire:inc.who-we-are/>
