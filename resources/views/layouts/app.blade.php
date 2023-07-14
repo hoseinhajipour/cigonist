@@ -8,46 +8,55 @@
     <title>@yield('title') | {{ config('app.name') }}</title>
 
     <livewire:styles/>
-    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+
+    <link rel="stylesheet" href="{{ asset('assets/vendor/bootstrap/dist/css/bootstrap.min.css') }} " type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/vendor/font-awesome/css/all.min.css') }} " type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/vendor/themify-icons/css/themify-icons.css') }} " type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/vendor/slick/slick.min.css') }} " type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/vendor/featherlight/featherlight.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/vendor/featherlight/featherlight.gallery.min.css') }}"
+          type="text/css">
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="{{ asset('assets/css/theme.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/utilities.css') }}">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a href="{{ route('index') }}" class="navbar-brand">
-                <i class="fa fa-code text-primary"></i> {{ config('app.name') }}
-            </a>
+<body data-spy="scroll" data-target="#navbarCollapse" class="bg-gray-800">
+<livewire:inc.menu/>
 
-            <button type="button" data-bs-toggle="collapse" data-bs-target="#nav" class="navbar-toggler">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+<main>
+    {{ $slot }}
+</main>
+@include('layouts.footer')
+<livewire:scripts/>
+<script src="{{ asset('js/app.js') }}"></script>
 
-            <div id="nav" class="collapse navbar-collapse">
-                <div class="navbar-nav ms-auto">
-                    @guest
-                        @if(Route::has('login'))
-                            <a href="{{ route('login') }}" class="nav-link">Login</a>
-                            <a href="{{ route('register') }}" class="nav-link">Register</a>
-                        @endif
-                    @else
-                        <div class="nav-item dropdown">
-                            <a href="#" data-bs-toggle="dropdown" class="nav-link dropdown-toggle">
-                                <i class="fa fa-user"></i> {{ Auth::user()->name }}
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-end">
-                                <a href="{{ route('logout') }}" class="dropdown-item">Logout</a>
-                            </div>
-                        </div>
-                    @endguest
-                </div>
-            </div>
-        </div>
-    </nav>
+<!-- Libs JS -->
 
-    <main class="container my-4">
-        {{ $slot }}
-    </main>
+<script src="{{ asset('assets/vendor/jquery/dist/jquery.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/popper.js/dist/popper.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/jquery-validation/dist/jquery.validate.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/jquery-form/dist/jquery.form.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/imagesloaded/imagesloaded.pkgd.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/isotope/dist/isotope.pkgd.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/featherlight/featherlight.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/featherlight/jquery.detect_swipe.js') }}"></script>
+<script src="{{ asset('assets/vendor/featherlight/featherlight.gallery.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/jquery.scrollTo/jquery.scrollTo.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/jQuery.countdown/dist/jquery.countdown.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/typed.js/typed.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/slick/slick.min.js') }}"></script>
 
-    <livewire:scripts/>
-    <script src="{{ mix('js/app.js') }}"></script>
+<!-- Theme JS -->
+<script src="{{ asset('assets/js/main.js') }}"></script>
 </body>
 </html>
