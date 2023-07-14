@@ -2,9 +2,8 @@
     <div class="container px-xl-10">
         <div class="row">
             <div class="col-lg-10 mx-auto text-center">
-                <img src="assets/images/logo-white.png" alt="" class="img-fluid mb-5">
-                <p class="mb-5">Bootstrap Portfolio Template and UI kit that will help you prototype and design
-                    beautiful, creative and modern websites.</p>
+                <img src="{{Voyager::image(setting('site.logo-white'))}}" alt="" class="img-fluid mb-5">
+                <p class="mb-5">{!! setting('site.description') !!}</p>
                 <ul class="list-inline mb-8">
 
                     <li class="list-inline-item mx-0">

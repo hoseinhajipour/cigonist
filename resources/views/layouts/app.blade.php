@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title') | {{ config('app.name') }}</title>
+    @yield('seo')
 
     <livewire:styles/>
 
@@ -30,6 +30,14 @@
     <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
 </head>
 <body data-spy="scroll" data-target="#navbarCollapse" class="bg-gray-800">
+@if(setting('site.loader'))
+    <div class="loader bg-dark">
+        <div class="spinner-grow text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+@endif
+
 <livewire:inc.menu/>
 
 <main>
