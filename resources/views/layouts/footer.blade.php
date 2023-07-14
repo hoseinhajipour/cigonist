@@ -31,7 +31,7 @@
                     </li>
 
                 </ul>
-                <p class="mb-0">Copyright © Erilisdesign.com 2020. All rights reserved.</p>
+                <p class="mb-0">Copyright © cigonist.com 2023. All rights reserved.</p>
             </div>
         </div>
     </div>

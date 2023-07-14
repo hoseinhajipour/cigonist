@@ -5,9 +5,7 @@
         </div>
         <div class="overlay-inner overlay-video">
             <video autoplay muted loop>
-                <source src="assets/video/moutains.webm" type="video/webm">
-                <source src="assets/video/moutains.mp4" type="video/mp4">
-                <source src="assets/video/moutains.ogv" type="video/ogg">
+                <source src="storage/{{ json_decode(setting('site.video_intro'))[0]->download_link}}" type="video/mp4">
             </video>
         </div>
         <div class="overlay-inner bg-gray-900 opacity-90"></div>
