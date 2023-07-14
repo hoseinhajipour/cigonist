@@ -13,6 +13,17 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+Route::get('/fixit', function () {
+    dd("fx");
+    /*
+    $exitCode = Artisan::call('storage:link ');
+    $exitCode = Artisan::call('route:cache');
+    $exitCode = Artisan::call('config:cache');
+    $exitCode = Artisan::call('cache:clear');
+    $exitCode = Artisan::call('view:clear');
+*/
+    return $exitCode;
+});
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
