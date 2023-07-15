@@ -16,16 +16,23 @@
 
     <div class="navbar-collapse collapse" id="navbarCollapse">
 
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto ">
+            <!--
+
             <li class="nav-item">
                 <a class="nav-link" href="{{route('index')}}">Home</a>
             </li>
-            <li class="nav-item">
+                        <li class="nav-item">
                 <a class="nav-link" href="{{route('OurSolution')}}">OurSolution</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{route('WhoWeAre')}}">Who we are</a>
             </li>
+                        <li class="nav-item">
+                <a class="nav-link" href="{{route('Artstation')}}">Artstation</a>
+            </li>
+            -->
+
             <li class="nav-item">
                 <a class="nav-link" href="{{route('games')}}">Games</a>
             </li>
@@ -38,9 +45,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="{{route('PublishWithUs')}}">PublishWithUs</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{route('Artstation')}}">Artstation</a>
-            </li>
+
             <li class="nav-item">
                 <a class="nav-link" href="{{route('Contact')}}">Contact</a>
             </li>

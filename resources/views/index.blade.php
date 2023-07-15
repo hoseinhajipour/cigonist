@@ -29,8 +29,11 @@
                     <h1 class="mb-5">
                         I Am <span class="font-weight-bold" data-toggle="typed" data-options='{"strings": ["Amanda Watt", "UI/UX Designer", "Photographer"]}'></span>
                     </h1>
-                    <p class="mb-7">I’m Amanda Malat a marketing specialist with over five years work experience. Donec sed fringilla lectus, non vulputate orci. Integer id libero euismod, interdum ligula vel, porttitor magna.</p>
-                    <a href="#about-me" class="btn btn-soft-white scrollto ml-md-3 d-block d-md-inline-block">Learn more</a>
+                    <p class="mb-7">I’m Amanda Malat a marketing specialist with over five years work experience. Donec
+                        sed fringilla lectus, non vulputate orci. Integer id libero euismod, interdum ligula vel,
+                        porttitor magna.</p>
+                    <a href="#about-me" class="btn btn-soft-white scrollto ml-md-3 d-block d-md-inline-block">Learn
+                        more</a>
 
                 </div>
             </div>
@@ -39,5 +42,5 @@
     </section>
     <livewire:inc.latest-games/>
     <livewire:inc.who-we-are/>
-
+    <livewire:inc.our-solution-part/>
 </div>

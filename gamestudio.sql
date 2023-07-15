@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jul 14, 2023 at 06:39 AM
+-- Generation Time: Jul 15, 2023 at 02:35 PM
 -- Server version: 5.7.36
 -- PHP Version: 7.4.26
 
@@ -72,7 +72,7 @@ CREATE TABLE IF NOT EXISTS `data_rows` (
   `order` int(11) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`),
   KEY `data_rows_data_type_id_foreign` (`data_type_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=56 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=75 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `data_rows`
@@ -133,7 +133,25 @@ INSERT INTO `data_rows` (`id`, `data_type_id`, `field`, `type`, `display_name`, 
 (52, 6, 'status', 'select_dropdown', 'Status', 1, 1, 1, 1, 1, 1, '{\"default\":\"INACTIVE\",\"options\":{\"INACTIVE\":\"INACTIVE\",\"ACTIVE\":\"ACTIVE\"}}', 9),
 (53, 6, 'created_at', 'timestamp', 'Created At', 1, 1, 1, 0, 0, 0, NULL, 10),
 (54, 6, 'updated_at', 'timestamp', 'Updated At', 1, 0, 0, 0, 0, 0, NULL, 11),
-(55, 6, 'image', 'image', 'Page Image', 0, 1, 1, 1, 1, 1, NULL, 12);
+(55, 6, 'image', 'image', 'Page Image', 0, 1, 1, 1, 1, 1, NULL, 12),
+(56, 7, 'id', 'text', 'Id', 1, 0, 0, 0, 0, 0, '{}', 1),
+(57, 7, 'category_id', 'text', 'Category Id', 0, 1, 1, 1, 1, 1, '{}', 2),
+(58, 7, 'author_id', 'text', 'Author Id', 0, 1, 1, 1, 1, 1, '{}', 3),
+(59, 7, 'title', 'text', 'Title', 0, 1, 1, 1, 1, 1, '{}', 4),
+(60, 7, 'excerpt', 'text_area', 'Excerpt', 0, 1, 1, 1, 1, 1, '{}', 5),
+(61, 7, 'body', 'rich_text_box', 'Body', 0, 1, 1, 1, 1, 1, '{}', 6),
+(62, 7, 'image', 'image', 'Image', 0, 1, 1, 1, 1, 1, '{\"resize\":{\"width\":\"1000\",\"height\":\"null\"},\"quality\":\"70%\",\"upsize\":true,\"thumbnails\":[{\"name\":\"medium\",\"scale\":\"50%\"},{\"name\":\"small\",\"scale\":\"25%\"},{\"name\":\"cropped\",\"crop\":{\"width\":\"300\",\"height\":\"250\"}}]}', 7),
+(63, 7, 'slug', 'text', 'Slug', 0, 1, 1, 1, 1, 1, '{\"slugify\":{\"origin\":\"title\",\"forceUpdate\":true},\"validation\":{\"rule\":\"unique:games,slug\"}}', 8),
+(64, 7, 'status', 'select_dropdown', 'Status', 0, 1, 1, 1, 1, 1, '{\"default\":\"DRAFT\",\"options\":{\"PUBLISHED\":\"published\",\"DRAFT\":\"draft\",\"PENDING\":\"pending\"}}', 9),
+(65, 7, 'created_at', 'timestamp', 'Created At', 0, 1, 1, 1, 0, 1, '{}', 10),
+(66, 7, 'updated_at', 'timestamp', 'Updated At', 0, 0, 0, 0, 0, 0, '{}', 11),
+(67, 9, 'id', 'text', 'Id', 1, 0, 0, 0, 0, 0, '{}', 1),
+(68, 9, 'title', 'text', 'Title', 0, 1, 1, 1, 1, 1, '{}', 2),
+(69, 9, 'slug', 'text', 'Slug', 0, 0, 1, 1, 1, 1, '{\"slugify\":{\"origin\":\"title\",\"forceUpdate\":true},\"validation\":{\"rule\":\"unique:services,slug\"}}', 3),
+(70, 9, 'image', 'image', 'Image', 0, 1, 1, 1, 1, 1, '{}', 4),
+(72, 9, 'created_at', 'timestamp', 'Created At', 0, 0, 0, 0, 0, 0, '{}', 6),
+(73, 9, 'updated_at', 'timestamp', 'Updated At', 0, 0, 0, 0, 0, 0, '{}', 7),
+(74, 9, 'body', 'rich_text_box', 'Body', 0, 0, 1, 1, 1, 1, '{}', 5);
 
 -- --------------------------------------------------------
 
@@ -161,7 +179,7 @@ CREATE TABLE IF NOT EXISTS `data_types` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `data_types_name_unique` (`name`),
   UNIQUE KEY `data_types_slug_unique` (`slug`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `data_types`
@@ -173,7 +191,9 @@ INSERT INTO `data_types` (`id`, `name`, `slug`, `display_name_singular`, `displa
 (3, 'roles', 'roles', 'Role', 'Roles', 'voyager-lock', 'TCG\\Voyager\\Models\\Role', NULL, 'TCG\\Voyager\\Http\\Controllers\\VoyagerRoleController', '', 1, 0, NULL, '2023-07-14 03:08:25', '2023-07-14 03:08:25'),
 (4, 'categories', 'categories', 'Category', 'Categories', 'voyager-categories', 'TCG\\Voyager\\Models\\Category', NULL, '', '', 1, 0, NULL, '2023-07-14 03:08:26', '2023-07-14 03:08:26'),
 (5, 'posts', 'posts', 'Post', 'Posts', 'voyager-news', 'TCG\\Voyager\\Models\\Post', 'TCG\\Voyager\\Policies\\PostPolicy', '', '', 1, 0, NULL, '2023-07-14 03:08:26', '2023-07-14 03:08:26'),
-(6, 'pages', 'pages', 'Page', 'Pages', 'voyager-file-text', 'TCG\\Voyager\\Models\\Page', NULL, '', '', 1, 0, NULL, '2023-07-14 03:08:26', '2023-07-14 03:08:26');
+(6, 'pages', 'pages', 'Page', 'Pages', 'voyager-file-text', 'TCG\\Voyager\\Models\\Page', NULL, '', '', 1, 0, NULL, '2023-07-14 03:08:26', '2023-07-14 03:08:26'),
+(7, 'games', 'games', 'Game', 'Games', NULL, 'App\\Models\\Game', NULL, NULL, NULL, 1, 0, '{\"order_column\":null,\"order_display_column\":null,\"order_direction\":\"asc\",\"default_search_key\":null}', '2023-07-14 06:37:55', '2023-07-14 06:37:55'),
+(9, 'services', 'services', 'Service', 'Services', NULL, 'App\\Models\\Service', NULL, NULL, NULL, 1, 0, '{\"order_column\":null,\"order_display_column\":null,\"order_direction\":\"asc\",\"default_search_key\":null,\"scope\":null}', '2023-07-14 12:52:20', '2023-07-14 13:00:32');
 
 -- --------------------------------------------------------
 
@@ -193,6 +213,38 @@ CREATE TABLE IF NOT EXISTS `failed_jobs` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `failed_jobs_uuid_unique` (`uuid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `games`
+--
+
+DROP TABLE IF EXISTS `games`;
+CREATE TABLE IF NOT EXISTS `games` (
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `category_id` int(11) DEFAULT NULL,
+  `author_id` int(11) DEFAULT NULL,
+  `title` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `excerpt` text COLLATE utf8mb4_unicode_ci,
+  `body` text COLLATE utf8mb4_unicode_ci,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `slug` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `status` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `games`
+--
+
+INSERT INTO `games` (`id`, `category_id`, `author_id`, `title`, `excerpt`, `body`, `image`, `slug`, `status`, `created_at`, `updated_at`) VALUES
+(1, NULL, NULL, 'Line Age 2M', NULL, NULL, 'games\\July2023\\5DNpWztGScAjDqA87Jbd.jpg', 'line-age-2m', 'PUBLISHED', '2023-07-14 11:56:00', '2023-07-14 11:57:05'),
+(2, NULL, NULL, 'Blade & Soul', NULL, NULL, 'games\\July2023\\wS3UA8KZyu1grbNlgUn8.jpg', 'blade-and-soul', 'PUBLISHED', '2023-07-14 12:00:00', '2023-07-14 12:00:36'),
+(3, NULL, NULL, 'Guild Wars 2', NULL, NULL, 'games\\July2023\\JVShLfQ1qJ4CeRdqlyR9.jpg', 'guild-wars-2', 'PUBLISHED', '2023-07-14 12:01:11', '2023-07-14 12:01:11'),
+(4, NULL, NULL, 'Aion', NULL, NULL, 'games\\July2023\\wpJo68aoWIf1S1ItKVCh.jpg', 'aion', 'PUBLISHED', '2023-07-14 12:01:29', '2023-07-14 12:01:29');
 
 -- --------------------------------------------------------
 
@@ -240,7 +292,7 @@ CREATE TABLE IF NOT EXISTS `menu_items` (
   `parameters` text COLLATE utf8mb4_unicode_ci,
   PRIMARY KEY (`id`),
   KEY `menu_items_menu_id_foreign` (`menu_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `menu_items`
@@ -259,7 +311,9 @@ INSERT INTO `menu_items` (`id`, `menu_id`, `title`, `url`, `target`, `icon_class
 (10, 1, 'Settings', '', '_self', 'voyager-settings', NULL, NULL, 14, '2023-07-14 03:08:25', '2023-07-14 03:08:25', 'voyager.settings.index', NULL),
 (11, 1, 'Categories', '', '_self', 'voyager-categories', NULL, NULL, 8, '2023-07-14 03:08:26', '2023-07-14 03:08:26', 'voyager.categories.index', NULL),
 (12, 1, 'Posts', '', '_self', 'voyager-news', NULL, NULL, 6, '2023-07-14 03:08:26', '2023-07-14 03:08:26', 'voyager.posts.index', NULL),
-(13, 1, 'Pages', '', '_self', 'voyager-file-text', NULL, NULL, 7, '2023-07-14 03:08:26', '2023-07-14 03:08:26', 'voyager.pages.index', NULL);
+(13, 1, 'Pages', '', '_self', 'voyager-file-text', NULL, NULL, 7, '2023-07-14 03:08:26', '2023-07-14 03:08:26', 'voyager.pages.index', NULL),
+(14, 1, 'Games', '', '_self', NULL, NULL, NULL, 15, '2023-07-14 06:37:55', '2023-07-14 06:37:55', 'voyager.games.index', NULL),
+(15, 1, 'Services', '', '_self', NULL, NULL, NULL, 16, '2023-07-14 12:52:20', '2023-07-14 12:52:20', 'voyager.services.index', NULL);
 
 -- --------------------------------------------------------
 
@@ -331,14 +385,14 @@ CREATE TABLE IF NOT EXISTS `pages` (
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `pages_slug_unique` (`slug`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `pages`
 --
 
 INSERT INTO `pages` (`id`, `author_id`, `title`, `excerpt`, `body`, `image`, `slug`, `meta_description`, `meta_keywords`, `status`, `created_at`, `updated_at`) VALUES
-(1, 0, 'Hello World', 'Hang the jib grog grog blossom grapple dance the hempen jig gangway pressgang bilge rat to go on account lugger. Nelsons folly gabion line draught scallywag fire ship gaff fluke fathom case shot. Sea Legs bilge rat sloop matey gabion long clothes run a shot across the bow Gold Road cog league.', '<p>Hello World. Scallywag grog swab Cat o\'nine tails scuttle rigging hardtack cable nipper Yellow Jack. Handsomely spirits knave lad killick landlubber or just lubber deadlights chantey pinnace crack Jennys tea cup. Provost long clothes black spot Yellow Jack bilged on her anchor league lateen sail case shot lee tackle.</p>\n<p>Ballast spirits fluke topmast me quarterdeck schooner landlubber or just lubber gabion belaying pin. Pinnace stern galleon starboard warp carouser to go on account dance the hempen jig jolly boat measured fer yer chains. Man-of-war fire in the hole nipperkin handsomely doubloon barkadeer Brethren of the Coast gibbet driver squiffy.</p>', 'pages/page1.jpg', 'hello-world', 'Yar Meta Description', 'Keyword1, Keyword2', 'ACTIVE', '2023-07-14 03:08:26', '2023-07-14 03:08:26');
+(2, 2, 'who we are', 'who we are', '<p>NCSOFT&reg;, established in 1997 and headquartered in Seoul, South Korea, is one of the leading gaming publishers in the world. At NCSOFT West, we manage the portfolio, initiatives and game services across the Americas, Europe, Australia and New Zealand. Together we operate many of the most successful and influential massively multiplayer online games in the industry, welcoming hundreds of millions of players daily into exciting living worlds for extraordinary adventures.</p>', 'pages\\July2023\\B2AmxIjBTWaz9ioGCTyY.jpg', 'who-we-are', 'who-we-are', 'who-we-are', 'ACTIVE', '2023-07-14 12:10:26', '2023-07-14 12:14:14');
 
 -- --------------------------------------------------------
 
@@ -369,7 +423,7 @@ CREATE TABLE IF NOT EXISTS `permissions` (
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `permissions_key_index` (`key`)
-) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `permissions`
@@ -415,7 +469,17 @@ INSERT INTO `permissions` (`id`, `key`, `table_name`, `created_at`, `updated_at`
 (37, 'read_pages', 'pages', '2023-07-14 03:08:26', '2023-07-14 03:08:26'),
 (38, 'edit_pages', 'pages', '2023-07-14 03:08:26', '2023-07-14 03:08:26'),
 (39, 'add_pages', 'pages', '2023-07-14 03:08:26', '2023-07-14 03:08:26'),
-(40, 'delete_pages', 'pages', '2023-07-14 03:08:26', '2023-07-14 03:08:26');
+(40, 'delete_pages', 'pages', '2023-07-14 03:08:26', '2023-07-14 03:08:26'),
+(41, 'browse_games', 'games', '2023-07-14 06:37:55', '2023-07-14 06:37:55'),
+(42, 'read_games', 'games', '2023-07-14 06:37:55', '2023-07-14 06:37:55'),
+(43, 'edit_games', 'games', '2023-07-14 06:37:55', '2023-07-14 06:37:55'),
+(44, 'add_games', 'games', '2023-07-14 06:37:55', '2023-07-14 06:37:55'),
+(45, 'delete_games', 'games', '2023-07-14 06:37:55', '2023-07-14 06:37:55'),
+(46, 'browse_services', 'services', '2023-07-14 12:52:20', '2023-07-14 12:52:20'),
+(47, 'read_services', 'services', '2023-07-14 12:52:20', '2023-07-14 12:52:20'),
+(48, 'edit_services', 'services', '2023-07-14 12:52:20', '2023-07-14 12:52:20'),
+(49, 'add_services', 'services', '2023-07-14 12:52:20', '2023-07-14 12:52:20'),
+(50, 'delete_services', 'services', '2023-07-14 12:52:20', '2023-07-14 12:52:20');
 
 -- --------------------------------------------------------
 
@@ -476,7 +540,17 @@ INSERT INTO `permission_role` (`permission_id`, `role_id`) VALUES
 (37, 1),
 (38, 1),
 (39, 1),
-(40, 1);
+(40, 1),
+(41, 1),
+(42, 1),
+(43, 1),
+(44, 1),
+(45, 1),
+(46, 1),
+(47, 1),
+(48, 1),
+(49, 1),
+(50, 1);
 
 -- --------------------------------------------------------
 
@@ -565,6 +639,37 @@ INSERT INTO `roles` (`id`, `name`, `display_name`, `created_at`, `updated_at`) V
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `services`
+--
+
+DROP TABLE IF EXISTS `services`;
+CREATE TABLE IF NOT EXISTS `services` (
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `slug` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `body` text COLLATE utf8mb4_unicode_ci,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `services`
+--
+
+INSERT INTO `services` (`id`, `title`, `slug`, `image`, `body`, `created_at`, `updated_at`) VALUES
+(1, 'Art', 'art', NULL, NULL, '2023-07-14 13:00:40', '2023-07-14 13:00:40'),
+(2, 'Virtual Production', 'virtual-production', NULL, NULL, '2023-07-14 13:00:59', '2023-07-14 13:00:59'),
+(3, 'NFT Blockchain Games', 'nft-blockchain-games', NULL, NULL, '2023-07-14 13:01:26', '2023-07-14 13:01:26'),
+(4, 'Game Development', 'game-development', NULL, NULL, '2023-07-14 13:01:40', '2023-07-14 13:01:40'),
+(5, 'Porting', 'porting', NULL, NULL, '2023-07-14 13:01:49', '2023-07-14 13:01:49'),
+(6, 'Unity Games', 'unity-games', NULL, NULL, '2023-07-14 13:01:59', '2023-07-14 13:01:59'),
+(7, 'Unreal Engine Games', 'unreal-engine-games', NULL, NULL, '2023-07-14 13:02:10', '2023-07-14 13:02:10');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `settings`
 --
 
@@ -580,23 +685,27 @@ CREATE TABLE IF NOT EXISTS `settings` (
   `group` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `settings_key_unique` (`key`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `settings`
 --
 
 INSERT INTO `settings` (`id`, `key`, `display_name`, `value`, `details`, `type`, `order`, `group`) VALUES
-(1, 'site.title', 'Site Title', 'Site Title', '', 'text', 1, 'Site'),
-(2, 'site.description', 'Site Description', 'Site Description', '', 'text', 2, 'Site'),
+(1, 'site.title', 'Site Title', 'Cigonist', '', 'text', 1, 'Site'),
+(2, 'site.description', 'Site Description', 'Game Studio', '', 'text', 2, 'Site'),
 (3, 'site.logo', 'Site Logo', '', '', 'image', 3, 'Site'),
-(4, 'site.google_analytics_tracking_id', 'Google Analytics Tracking ID', '', '', 'text', 4, 'Site'),
+(4, 'site.google_analytics_tracking_id', 'Google Analytics Tracking ID', NULL, '', 'text', 4, 'Site'),
 (5, 'admin.bg_image', 'Admin Background Image', '', '', 'image', 5, 'Admin'),
 (6, 'admin.title', 'Admin Title', 'Voyager', '', 'text', 1, 'Admin'),
 (7, 'admin.description', 'Admin Description', 'Welcome to Voyager. The Missing Admin for Laravel', '', 'text', 2, 'Admin'),
 (8, 'admin.loader', 'Admin Loader', '', '', 'image', 3, 'Admin'),
 (9, 'admin.icon_image', 'Admin Icon Image', '', '', 'image', 4, 'Admin'),
-(10, 'admin.google_analytics_client_id', 'Google Analytics Client ID (used for admin dashboard)', '', '', 'text', 1, 'Admin');
+(10, 'admin.google_analytics_client_id', 'Google Analytics Client ID (used for admin dashboard)', NULL, '', 'text', 1, 'Admin'),
+(11, 'site.logo-white', 'logo-white', 'settings\\July2023\\FaCbtydipajVyJUkrBW1.png', NULL, 'image', 6, 'Site'),
+(12, 'site.logo-dark', 'logo-dark', 'settings\\July2023\\PYDQbH57kiXvlJhsfN2B.png', NULL, 'image', 7, 'Site'),
+(13, 'site.loader', 'loader', '0', NULL, 'checkbox', 8, 'Site'),
+(14, 'site.video_intro', 'video_intro', '[{\"download_link\":\"settings\\\\July2023\\\\qJdwT3XZCgHbZfcm1em8.mp4\",\"original_name\":\"kor_landing_loop.mp4\"}]', NULL, 'file', 9, 'Site');
 
 -- --------------------------------------------------------
 
