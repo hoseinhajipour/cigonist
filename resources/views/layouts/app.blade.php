@@ -28,7 +28,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
-
+    <link rel="stylesheet" href="{{ asset('css/style.css') }} " type="text/css">
 
 </head>
 <body data-spy="scroll" data-target="#navbarCollapse" class="bg-gray-800">

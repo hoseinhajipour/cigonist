@@ -1,5 +1,5 @@
 <section>
-    <div class="container">
+    <div class="container reveal">
         <div class="card shadow">
             <img src="{{Voyager::image($page->image)}}" class="card-img-top"/>
             <div class="text-center text-white my-3">

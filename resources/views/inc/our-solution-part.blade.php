@@ -1,8 +1,7 @@
 <section class="text-white">
-    <div class="container text-center">
+    <div class="container text-center reveal">
         <h1>{{__("messages.service_how")}}</h1>
         <div class="row">
-
             @foreach($services as $service)
                 <div class="col-lg-4 col-6 ">
                     <div class="card my-3">

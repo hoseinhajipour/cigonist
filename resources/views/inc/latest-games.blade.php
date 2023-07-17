@@ -1,23 +1,28 @@
-<section>
-    <div class="container">
+<div id="cards_landscape_wrap-2">
+    <div class="container reveal">
         <div class="row">
             @forelse($games as $game)
-                <div class="col-lg-3 col-12">
-                    <div class="card shadow my-3">
-                        <a href="{{route('game',["slug"=>$game->slug])}}">
-                            <img src="{{ Voyager::image($game->getThumbnail($game->image, 'cropped')) }}"
-                                 class="card-img-top post_image_cover"/>
-                        </a>
-                        <div class="card-body text-center">
-                            <b class="d-block text-white my-3">{{$game->getTranslatedAttribute('title',App::getLocale(), 'fallbackLocale')}}</b>
-                            <a href="{{route('game',["slug"=>$game->slug])}}"
-                               class="btn btn-primary">{{__("messages.readMore")}}</a>
+                <div class="col-xs-4 col-sm-6 col-md-3 col-lg-3">
+                    <a href="">
+                        <div class="card-flyer">
+                            <div class="text-box">
+                                <div class="image-box">
+                                    <a href="{{route('game',["slug"=>$game->slug])}}">
+                                        <img src="{{ Voyager::image($game->image) }}" alt=""/>
+                                    </a>
+                                </div>
+                                <div class="text-container">
+                                    <a href="{{route('game',["slug"=>$game->slug])}}">
+                                        <h6>{{$game->getTranslatedAttribute('title',App::getLocale(), 'fallbackLocale')}}</h6>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-            @empty
-                <p class="alert alert-warning text-center">{{__("messages.notfound")}}</p>
-            @endforelse
+                @endforeach
+
         </div>
     </div>
-</section>
+</div>
+

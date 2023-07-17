@@ -618,13 +618,32 @@ License: https://themeforest.net/licenses/standard
 
   $(window).on( 'scroll', function(){
     personite_navOnScroll();
-    personite_backToTop();
+      personite_backToTop();
   });
 
-  $(window).on('resize', function(){
-    personite_navOnScroll();
-    personite_backToTop();
-    personite_slider();
-  });
+    $(window).on('resize', function () {
+        personite_navOnScroll();
+        personite_backToTop();
+        personite_slider();
+    });
 
 })(jQuery);
+
+
+function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+
+    for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+
+        if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+        } else {
+            reveals[i].classList.remove("active");
+        }
+    }
+}
+
+window.addEventListener("scroll", reveal);

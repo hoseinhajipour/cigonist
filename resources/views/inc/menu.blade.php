@@ -1,3 +1,8 @@
+<style>
+    .ml-auto, .mx-auto {
+        margin-right: auto;
+    }
+</style>
 <nav id="siteNavbar"
      class="site-navbar site-navbar-transparent navbar navbar-expand-lg navbar-dark bg-gray-800 shadow-dark-lg fixed-top py-2">
 
@@ -17,7 +22,7 @@
     <div class="navbar-collapse collapse" id="navbarCollapse">
 
         <ul class="navbar-nav ml-auto ">
-            <!--
+        <!--
 
             <li class="nav-item">
                 <a class="nav-link" href="{{route('index')}}">Home</a>

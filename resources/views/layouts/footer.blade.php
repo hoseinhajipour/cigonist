@@ -38,6 +38,6 @@
 </footer>
 
 <!-- Button - Back to top -->
-<a href="#" class="btn-back-to-top scrollto btn btn-icon btn-primary shadow-light mb-4 mr-4" tabindex="-1">
+<a href="#" class="btn-back-to-top scrollto btn btn-icon btn-danger shadow-light mb-4 mr-4" tabindex="-1">
     <i class="fas fa-chevron-up btn-icon-inner"></i>
 </a>
