@@ -8,7 +8,7 @@
    'keywords'=>setting('site.keywords')
 ])
 @endsection
-<div>
+<section>
     <section id="home" class="py-9 py-lg-10 min-vh-75 d-flex">
         <div class="overlay overlay-advanced d-flex align-items-center">
             <div class="overlay-inner bg-image-holder bg-cover">
@@ -43,4 +43,4 @@
     <livewire:inc.latest-games/>
     <livewire:inc.who-we-are/>
     <livewire:inc.our-solution-part/>
-</div>
+</section>

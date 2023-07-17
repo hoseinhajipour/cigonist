@@ -67,6 +67,6 @@
 <script src="{{ asset('assets/vendor/slick/slick.min.js') }}"></script>
 
 <!-- Theme JS -->
-<script src="{{ asset('assets/js/main.js') }}"></script>
+<script src="{{ asset('assets/js/main.js?v=1.0') }}"></script>
 </body>
 </html>
