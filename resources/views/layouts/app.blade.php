@@ -24,11 +24,23 @@
 
     <!-- Theme CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/theme.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/animate.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/utilities.css') }}">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }} " type="text/css">
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset("images/favicon.png")}}">
+    <link rel="apple-touch-icon" href="{{asset("images/favicon.png")}}"/>
+
+    <script src="{!!url('/js/jquery.min.js')!!}"></script>
+    <link href="{{ asset('css/jquery.fancybox.min.css') }}" rel="stylesheet">
+    <script src="{{ asset('js/jquery.fancybox.min.js') }}"></script>
+
+    <link rel="stylesheet" href="{{url('/css/swiper-bundle.min.css')}}"/>
+    <script src="{{ asset('js/swiper-bundle.min.js') }}"></script>
 
 </head>
 <body data-spy="scroll" data-target="#navbarCollapse" class="bg-gray-800">
@@ -68,5 +80,8 @@
 
 <!-- Theme JS -->
 <script src="{{ asset('assets/js/main.js?v=1.0') }}"></script>
+
+@yield('javascript')
+@stack('javascript')
 </body>
 </html>

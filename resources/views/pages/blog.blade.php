@@ -9,8 +9,8 @@
 ])
 @endsection
 
-<div class="container p-5">
-    <h1 class="my-5 text-white">{{__("messages.lastnews")}}</h1>
+<div class="container " style="margin-top: 60px">
+    <h2 class="my-5 text-white h2_title">{{__("messages.lastnews")}}</h2>
 
     <div class="row">
         <div class="col-lg-3 d-lg-block d-none">
@@ -40,7 +40,7 @@
                             <div class="card-body text-center">
                                 <b class="d-block text-white my-3">{{$post->getTranslatedAttribute('title',App::getLocale(), 'fallbackLocale')}}</b>
                                 <a href="{{route('post',["slug"=>$post->slug])}}"
-                                   class="btn btn-light">{{__("messages.readMore")}}</a>
+                                   class="btn btn-primary">{{__("messages.readMore")}}</a>
                             </div>
                         </div>
                     </div>

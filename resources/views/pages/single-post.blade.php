@@ -19,11 +19,11 @@
                     <img class="card-img-top" src="{{ Voyager::image($post->image) }}"/>
                 </div>
                 <div class="col-lg-6 col-12">
-                    <h1 class="menu_active">{{$post->getTranslatedAttribute('title',App::getLocale(), 'fallbackLocale')}}</h1>
+                    <h1 class="menu_active h2_title">{{$post->getTranslatedAttribute('title',App::getLocale(), 'fallbackLocale')}}</h1>
                     <p>{{$post->getTranslatedAttribute('excerpt',App::getLocale(), 'fallbackLocale') }}</p>
                 </div>
             </div>
-            @include('inc.call_us')
+
             <div class="row">
                 <div class="col-12">
                     {!! $post->getTranslatedAttribute('body',App::getLocale(), 'fallbackLocale') !!}
@@ -33,7 +33,7 @@
         </div>
     </div>
 
-    <h1 class="my-3 menu_active">{{__("messages.relative_post")}}</h1>
+    <h1 class="my-3 menu_active h2_title">{{__("messages.relative_post")}}</h1>
     <div class="row my-3">
         @foreach($posts as $post)
             <div class="col-lg-3 col-12">

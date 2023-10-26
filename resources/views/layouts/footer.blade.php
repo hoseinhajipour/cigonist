@@ -1,7 +1,7 @@
-<footer class="position-relative py-9 py-lg-12 bg-dark text-gray-400">
-    <div class="container px-xl-10">
+<footer class="position-relative bg-dark text-gray-400 ">
+    <div class="container">
         <div class="row">
-            <div class="col-lg-10 mx-auto text-center">
+            <div class="col-lg-3 col-12">
                 <img src="{{Voyager::image(setting('site.logo-white'))}}" alt="" class="img-fluid mb-5">
                 <p class="mb-5">{!! setting('site.description') !!}</p>
                 <ul class="list-inline mb-8">
@@ -31,13 +31,44 @@
                     </li>
 
                 </ul>
-                <p class="mb-0">Copyright © cigonist.com 2023. All rights reserved.</p>
+            </div>
+            <div class="col-lg-3 col-12">
+                <h4 class="bold_h4">ABOUT</h4>
+                <div class="menu-about-menu-container">
+                    <ul id="menu-about-menu" class="menu">
+                        <li id="menu-item-74064"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-74064"><a href="#">About</a>
+                        </li>
+                        <li id="menu-item-74065"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-74065"><a href="#">Helpdesk</a>
+                        </li>
+                        <li id="menu-item-74066"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-74066"><a
+                                href="https://cigonist.com/careers/">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-12">
+                <h4 class="bold_h4">COMMUNITY</h4>
+                <div class="menu-community-container"><ul id="menu-community" class="menu"><li id="menu-item-74067" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-74067"><a href="https://cigonist.com/shop/">Shop</a></li>
+                        <li id="menu-item-74068" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-74068"><a href="https://cigonist.com/blog-right-sidebar/">Blog</a></li>
+                    </ul></div>
+            </div>
+            <div class="col-lg-3 col-12">
+                <h4 class="bold_h4">CONTACT US</h4>
+                <div id="block-9" class="widget-2 widget widget_block widget_text">
+                    <p>E-Mail<br>info@cigonist.om</p>
+                </div>
+                <div id="block-7" class="widget-3 last widget widget_block widget_text">
+                    <p>Business Hours<br>Monday - Friday<br>10AM - 6PM</p>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
 
-<!-- Button - Back to top -->
-<a href="#" class="btn-back-to-top scrollto btn btn-icon btn-danger shadow-light mb-4 mr-4" tabindex="-1">
+    </div>
+
+</footer>
+<p class="text-center copyright">Copyright © cigonist.com 2023. All rights reserved.</p>
+<a href="#" class="btn-back-to-top scrollto btn btn-icon btn-dark shadow-light mb-4 mr-4" tabindex="-1">
     <i class="fas fa-chevron-up btn-icon-inner"></i>
 </a>

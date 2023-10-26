@@ -1,23 +1,23 @@
-<section>
-    <div class="container reveal">
-        <div class="card shadow">
-            <img src="{{Voyager::image($page->image)}}" class="card-img-top"/>
-            <div class="text-center text-white my-3">
-                {!! $page->body !!}
-            </div>
-            <div class="text-center text-white my-2">
-                <h4>STAY CONNECTED WITH OUR GAMES</h4>
-                <a class="btn btn-sm btn-icon btn-soft-secondary text-gray-400" href="#!" tabindex="0">
-                    <i class="fab fa-facebook-f btn-icon-inner"></i>
-                </a>
-                <a class="btn btn-sm btn-icon btn-soft-secondary text-gray-400" href="#!" tabindex="0">
-                    <i class="fab fa-twitter btn-icon-inner"></i>
-                </a>
+<section class="background_img_01">
+    <div class="container text-white text-center">
+        <h2>Publish With Us</h2>
+        <p>Cigonist is an international game publisher based in South Korea that specializes in publishing high-quality
+            indie games for PC. Our team comprises experienced game veterans with decades of combined experience in
+            indie game development and marketing. We pride ourselves on offering a full suite of publishing services and
+            our ability to market games to the world, including the huge but difficult-to-enter Chinese market.</p>
 
-                <a class="btn btn-sm btn-icon btn-soft-secondary text-gray-400" href="#!" tabindex="0">
-                    <i class="fab fa-linkedin-in btn-icon-inner"></i>
-                </a>
-            </div>
-        </div>
+
+        <a href="#" target="_blank"
+           class="btn btn-dark">
+				        <span class="elementor-button-content-wrapper">
+			                <span class="elementor-button-icon elementor-align-icon-left">
+				                <i aria-hidden="true" class="fas fa-rocket"></i>
+                            </span>
+                            <span class="elementor-button-text">See More</span>
+                        </span>
+        </a>
+
     </div>
+
+
 </section>

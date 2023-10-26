@@ -15,6 +15,7 @@ class Index extends Component
 
     public function render()
     {
+       // return "wait...";
         return view('index');
     }
 }
