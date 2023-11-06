@@ -1,38 +1,30 @@
-<nav id="siteNavbar" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" href="{{route('index')}}">
-        <img src="{{Voyager::image(setting('site.logo-white'))}}" width="100">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
-        <ul class="navbar-nav m-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="{{ route('games') }}">Games</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ route('blog') }}">Blog</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ route('Careers') }}">Careers</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ route('Contact') }}">Contact</a>
-            </li>
-        </ul>
+<nav class="menu">
+    <div class="row">
+        <div class="col-3 p-0" align="right">
+            <a href="/">
+                <img src="{{asset('images/menu_left.webp')}}" height="70">
+            </a>
+        </div>
+        <div class="col-5 p-0">
+            <img src="{{asset('images/menu_right.webp')}}" class="img_full" height="70">
 
-        <!-- Language links aligned to the right -->
-        <ul class="form-inline mt-2 mt-md-0 ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#">En</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Ko</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Jp</a>
-            </li>
-        </ul>
+            <a href="{{ route('games') }}" class="link_menu {{ request()->is('games') ? 'active_menu' : '' }}">GAMES</a>
+            <a href="{{ route('blog') }}" class="link_menu {{ request()->is('blog') ? 'active_menu' : '' }}">BLOG</a>
+            <a href="{{ route('PublishWithUs') }}"
+               class="link_menu {{ request()->is('PublishWithUs') ? 'active_menu' : '' }}">PUBLISH</a>
+            <a href="{{ route('Careers') }}" class="link_menu {{ request()->is('Careers') ? 'active_menu' : '' }}">CAREER</a>
+            <a href="{{ route('Contact') }}" class="link_menu {{ request()->is('Contact') ? 'active_menu' : '' }}">CONTACT</a>
+        </div>
+        <div class="col-4 p-0 text-right">
+            <img src="{{asset('images/menu_right.webp')}}" class="img_full" height="70">
+
+            <a href="#" class="lang_link">KO</a>
+            <a href="#" class="lang_link border_left">EN</a>
+            <a href="#" class="lang_link border_left">CN</a>
+            <a href="#" class="lang_link border_left">JP</a>
+        </div>
+
     </div>
+
+
 </nav>

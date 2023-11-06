@@ -69,8 +69,6 @@
 
     <livewire:inc.latest-games/>
 
-    <livewire:inc.our-solution-part/>
-
     <livewire:inc.our-services/>
 
     <livewire:inc.who-we-are/>

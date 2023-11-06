@@ -29,11 +29,11 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }} " type="text/css">
+    <link rel="stylesheet" href="{{ asset('css/style.css?v=1.0') }} " type="text/css">
 
 
-    <link rel="shortcut icon" type="image/x-icon" href="{{asset("images/favicon.png")}}">
-    <link rel="apple-touch-icon" href="{{asset("images/favicon.png")}}"/>
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset("images/favicon.webp")}}">
+    <link rel="apple-touch-icon" href="{{asset("images/favicon.webp")}}"/>
 
     <script src="{!!url('/js/jquery.min.js')!!}"></script>
     <link href="{{ asset('css/jquery.fancybox.min.css') }}" rel="stylesheet">
@@ -43,7 +43,7 @@
     <script src="{{ asset('js/swiper-bundle.min.js') }}"></script>
 
 </head>
-<body data-spy="scroll" data-target="#navbarCollapse" class="bg-gray-800">
+<body data-spy="scroll" data-target="#navbarCollapse" >
 @if(setting('site.loader'))
     <div class="loader bg-dark">
         <div class="spinner-grow text-primary" role="status">
@@ -59,6 +59,9 @@
 </main>
 @include('layouts.footer')
 <livewire:scripts/>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<x-livewire-alert::scripts />
+
 <script src="{{ asset('js/app.js') }}"></script>
 
 <!-- Libs JS -->

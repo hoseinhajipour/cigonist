@@ -8,44 +8,49 @@
    'keywords'=>setting('site.keywords')
 ])
 @endsection
-<section class="text-white">
+<section class="text-white m-0 p-0">
     <img src="{{asset('images/contact-bg.jpg')}}" width="100%"/>
     <div class="container">
-        <div class="card my-5">
-            <div class="card-header">
-
+        <div class="card my-5 mx-20 border-0">
+            <div class="card-header text-center border-0">
                 <h3>CONTACT US</h3>
             </div>
             <div class="card-body">
-                <h4>NCSOFT WEST</h4>
-                <div class="row">
-                    <div class="col-lg-4 col-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <b>GAME RELATED ISSUES</b>
-                                <p>info@cigonist.com</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <b>GAME RELATED ISSUES</b>
-                                <p>info@cigonist.com</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <b>GAME RELATED ISSUES</b>
-                                <p>info@cigonist.com</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="text-center">
+                    <p>For general enquiries, quotes, and requests for information on our services, please complete the
+                        form
+                        below and we'll get back to you as soon as possible. </p>
+                </div>
+
+                <div class="p-5">
+                    <input wire:model.defer="first_name" type="text" class="form-control my-3"
+                           placeholder="First Name * ">
+                    <input wire:model.defer="last_name" type="text" class="form-control my-3"
+                           placeholder="Last Name *  ">
+                    <input wire:model.defer="email" type="email" class="form-control my-3" placeholder="Email * ">
+                    <input wire:model.defer="company" type="text" class="form-control my-3" placeholder="Company * ">
+                    <textarea wire:model.defer="description" class="form-control my-3"
+                              placeholder="Description of your project "></textarea>
+                    <input wire:model="checked" type="checkbox" class="big_checkbox">
+                    <label class="d-inline"> By submitting this form, I agree to Amber's Privacy Policy. </label>
                 </div>
 
             </div>
+            <div class="card-footer text-center">
+                <button wire:click="SubmitForm()"
+                        @if($checked==false) disabled @endif
+                        class="btn btn-outline-orange">
+                    <div wire:loading class="text-center">
+                        <div class="spinner-border" role="status">
+                        </div>
+                    </div>
+                    <div wire:loading.remove>
+                        {{ __('messages.SendMessage') }}
+                    </div>
+                </button>
+            </div>
         </div>
     </div>
+
+
 </section>

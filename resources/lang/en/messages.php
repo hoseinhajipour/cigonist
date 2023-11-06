@@ -38,6 +38,7 @@ return [
     'whatsapp' => 'WhatsApp',
     'relative_post' => 'Related Articles',
     'address_info' => 'Dubai Business Bay Churchill Tower',
-    'games'=>'Games'
+    'games'=>'Games',
+    'SendMessage'=>'Send Message'
 ];
 
