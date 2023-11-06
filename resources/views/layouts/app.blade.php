@@ -85,6 +85,14 @@
 <!-- Theme JS -->
 <script src="{{ asset('assets/js/main.js?v=1.0') }}"></script>
 
+<script>
+    document.addEventListener('livewire:load', function () {
+        Livewire.on('languageChanged', function () {
+            location.reload(true); // Perform a full page reload
+        });
+    });
+</script>
+
 @yield('javascript')
 @stack('javascript')
 </body>

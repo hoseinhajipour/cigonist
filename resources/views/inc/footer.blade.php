@@ -1,4 +1,4 @@
-<footer class="position-relative bg-dark text-white ">
+<footer class="position-relative text-white ">
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-12">
@@ -45,7 +45,7 @@
 
             </div>
             <div class="col-6">
-                <label class="orange_color">Connect with us</label>
+                <label class="orange_color">{{__("messages.Connectwithus")}}</label>
                 <ul class="list-inline mb-8 d-inline-block">
 
                     <li class="list-inline-item mx-0">

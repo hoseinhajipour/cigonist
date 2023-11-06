@@ -17,6 +17,14 @@ return [
             indie games for PC. Our team comprises experienced game veterans with decades of combined experience in
             indie game development and marketing. We pride ourselves on offering a full suite of publishing services and
             our ability to market games to the world, including the huge but difficult-to-enter Chinese market.',
-    'SeeMore' => 'See More'
+    'SeeMore' => 'See More',
+    'CONTACTUS_info' => 'For general enquiries, quotes, and requests for information on our services, please complete the form below and we"ll get back to you as soon as possible .',
+    'First Name * ' => 'First Name * ',
+    'Last Name *' => 'Last Name *',
+    'Email *' => 'Email *',
+    'Company *' => 'Company *',
+    'Descriptionproject' => 'Description of your project',
+    'submitting_info' => "By submitting this form, I agree to Amber's Privacy Policy.",
+    'Connectwithus' => "Connect with us"
 ];
 

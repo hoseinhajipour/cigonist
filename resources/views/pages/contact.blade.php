@@ -13,26 +13,24 @@
     <div class="container">
         <div class="card my-5 mx-20 border-0">
             <div class="card-header text-center border-0">
-                <h3>CONTACT US</h3>
+                <h3>{{__("messages.CONTACT US")}}</h3>
             </div>
             <div class="card-body">
                 <div class="text-center">
-                    <p>For general enquiries, quotes, and requests for information on our services, please complete the
-                        form
-                        below and we'll get back to you as soon as possible. </p>
+                    <p> {{__("messages.CONTACTUS_info")}} </p>
                 </div>
 
                 <div class="p-5">
                     <input wire:model.defer="first_name" type="text" class="form-control my-3"
-                           placeholder="First Name * ">
+                           placeholder="{{ __('messages.First Name * ') }}">
                     <input wire:model.defer="last_name" type="text" class="form-control my-3"
-                           placeholder="Last Name *  ">
-                    <input wire:model.defer="email" type="email" class="form-control my-3" placeholder="Email * ">
-                    <input wire:model.defer="company" type="text" class="form-control my-3" placeholder="Company * ">
+                           placeholder="{{ __('messages.Last Name *') }}">
+                    <input wire:model.defer="email" type="email" class="form-control my-3" placeholder="{{ __('messages.Email *') }}">
+                    <input wire:model.defer="company" type="text" class="form-control my-3" placeholder="{{ __('messages.Company *') }}">
                     <textarea wire:model.defer="description" class="form-control my-3"
-                              placeholder="Description of your project "></textarea>
+                              placeholder="{{ __('messages.Descriptionproject') }}"></textarea>
                     <input wire:model="checked" type="checkbox" class="big_checkbox">
-                    <label class="d-inline"> By submitting this form, I agree to Amber's Privacy Policy. </label>
+                    <label class="d-inline"> {{ __('messages.submitting_info') }}</label>
                 </div>
 
             </div>

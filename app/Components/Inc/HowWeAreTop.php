@@ -5,10 +5,9 @@ namespace App\Components\Inc;
 use Illuminate\Support\Facades\App;
 use Livewire\Component;
 
-class Menu extends Component
+class HowWeAreTop extends Component
 {
     public $language;
-
     public function mount()
     {
         // Check if the 'locale' key exists in the session
@@ -20,17 +19,8 @@ class Menu extends Component
         }
     }
 
-
-    public function change($newlng)
-    {
-        App::setLocale($newlng);
-        session()->put('locale', $newlng);
-        $this->language = $newlng;
-        $this->emit('languageChanged'); // Emit a custom event
-    }
-
     public function render()
     {
-        return view('inc.menu');
+        return view('inc.how-we-are-top');
     }
 }

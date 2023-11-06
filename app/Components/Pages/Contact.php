@@ -2,6 +2,7 @@
 
 namespace App\Components\Pages;
 
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use Livewire\Component;
@@ -17,8 +18,19 @@ class Contact extends Component
     public $email;
     public $company;
     public $description;
-
     public $checked = false;
+    public $language;
+
+    public function mount()
+    {
+        // Check if the 'locale' key exists in the session
+        if (session()->has('locale')) {
+            $this->language = session('locale');
+            App::setLocale($this->language);
+        } else {
+            $this->language = App::getLocale();
+        }
+    }
 
     public function route()
     {
