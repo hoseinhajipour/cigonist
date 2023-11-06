@@ -5,16 +5,16 @@
     <div class="row">
         <div class="col-5 text-center p-10">
             <div class="orange_border p-3 text-left black_bg">
-                <b class="yellow_color my-2">Game Development</b>
+                <b class="yellow_color my-2">{{__("messages.Game Development")}}</b>
                 <p>
-                    game production, from concept to launch, and beyond
+                    {{__("messages.Game Development_info")}}
                 </p>
             </div>
 
             <div class="orange_border p-3 text-left my-5 black_bg">
-                <b class="yellow_color my-2">Art Production</b>
+                <b class="yellow_color my-2">{{__("messages.Art Production")}}</b>
                 <p>
-                    Complete game art production
+                    {{__("messages.Art Production_info")}}
                 </p>
             </div>
         </div>
@@ -22,19 +22,18 @@
             <img src="{{asset('images/platforms.webp')}}" width="50%">
         </div>
         <div class="col-5 text-center p-10">
+
             <div class="orange_border p-3 text-left black_bg">
-                <b class="yellow_color my-2">Marketing ::</b>
+                <b class="yellow_color my-2">{{__("messages.APP Development")}}</b>
                 <p>
-                    Partner with publishers to plan and execute
-                    go-to-marketing strategies and campaigns
-                    globally, by offering
+                    {{__("messages.APP Development_info")}}
+                </p>
+            </div>
 
-                    End-to-end campaign planning and go-to-market strategy
-                    Asset creation (art direction, copy, UX/UI) & Web development
-                    Video Production (trailers, postproduction, video editing, in-game capture)
-                    Community building & SoMe Management (including influencer marketing)
-
-
+            <div class="orange_border p-3 text-left my-5 black_bg">
+                <b class="yellow_color my-2">{{__("messages.Marketing")}}</b>
+                <p>
+                    {{__("messages.Marketing_info")}}
                 </p>
             </div>
 

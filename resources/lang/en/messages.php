@@ -25,6 +25,19 @@ return [
     'Company *' => 'Company *',
     'Descriptionproject' => 'Description of your project',
     'submitting_info' => "By submitting this form, I agree to Amber's Privacy Policy.",
-    'Connectwithus' => "Connect with us"
+    'Connectwithus' => "Connect with us",
+
+    'Game Development' => "Game Development",
+    'Game Development_info' => "game production, from concept to launch, and beyond",
+
+    'Art Production' => "Art Production",
+    'Art Production_info' => "Complete game art production",
+
+    'APP Development' => "APP Development",
+    'APP Development_info' => "Cutting Edge App",
+
+    'Marketing' => "Marketing",
+    'Marketing_info' => "Plan and execute global go-to-marketing strategies and
+                    effective campaigns",
 ];
 

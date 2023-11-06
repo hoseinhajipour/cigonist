@@ -27,6 +27,7 @@
             <div class="row">
                 <div class="col-12 mx-auto text-start text-white">
 
+                    <!--
                     <p class="h5 mb-5">
                         THE ULTIMATE
                         COMPETITIVE
@@ -34,7 +35,7 @@
                     <p class="mb-7">Create events, teams and communities with ease</p>
                     <a href="#about-me" class="btn btn-dark">Learn
                         more</a>
-
+-->
                 </div>
             </div>
         </div>
