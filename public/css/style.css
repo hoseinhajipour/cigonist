@@ -178,7 +178,7 @@ body {
 }
 
 .background_img_01 {
-    background-image: url(/images/publish_withus.webp);
+    background-image: url(/images/PUBLISHWITHUS.webp);
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 120px;
@@ -397,6 +397,14 @@ footer ul {
     top: 25px;
     padding-left: 15px;
     padding-right: 5px;
+}
+
+.lang_link:hover {
+    color: orangered;
+}
+
+.active_lang {
+    color: orangered;
 }
 
 .border_left {

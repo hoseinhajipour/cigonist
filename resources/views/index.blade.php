@@ -45,18 +45,10 @@
         <div class="p-10">
             <div class="row">
                 <div class="col-lg-6 col-12 text-white animate__animated animate__fadeInLeft">
-                    <h2 class="h2_title">How We Are</h2>
-                    <p>Cigonist is a global game development company built by a collective of artisans
-                        residing in nine locations covering four different continents. We are evolving the
-                        art and science of play by operating on a scaled-up, vertically integrated
-                        organizational model to achieve mastery in the full set of game development
-                        specializations.
-
-                        Our global network of multidisciplinary locations functions like an integrated hub,
-                        offering our partners a seamless workflow development, cost, and time effectiveness,
-                        while also ensuring excellence in all aspects of game development.</p>
+                    <h2 class="h2_title">{{__("messages.HOW WE ARE")}}</h2>
+                    <p>{{__("messages.HOWWEARE_INFO")}}</p>
                     <a href="#" class="btn btn-outline-orange">
-                        ABOUT US
+                        {{__("messages.ABOUT US")}}
                     </a>
                 </div>
                 <div class="col-lg-6 col-12 ">

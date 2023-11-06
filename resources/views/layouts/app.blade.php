@@ -43,7 +43,7 @@
     <script src="{{ asset('js/swiper-bundle.min.js') }}"></script>
 
 </head>
-<body data-spy="scroll" data-target="#navbarCollapse" >
+<body data-spy="scroll" data-target="#navbarCollapse">
 @if(setting('site.loader'))
     <div class="loader bg-dark">
         <div class="spinner-grow text-primary" role="status">
@@ -57,10 +57,11 @@
 <main>
     {{ $slot }}
 </main>
-@include('layouts.footer')
+<livewire:inc.footer/>
+
 <livewire:scripts/>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<x-livewire-alert::scripts />
+<x-livewire-alert::scripts/>
 
 <script src="{{ asset('js/app.js') }}"></script>
 

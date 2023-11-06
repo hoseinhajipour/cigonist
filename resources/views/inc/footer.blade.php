@@ -30,8 +30,8 @@
 
             <div class="col-lg-3 col-12">
                 <h4 class="bold_h4">{{__("messages.PRIVACYPOLICY")}}</h4>
-                <a href="#" class="text-white d-block">{{__("messages.Privacy Policy")}}</a>
-                <a href="#" class="text-white d-block">{{__("messages.Cookie Policy")}}</a>
+                <a href="#" class="text-white d-block">Privacy Policy</a>
+                <a href="#" class="text-white d-block">Cookie Policy</a>
 
             </div>
         </div>
