@@ -35,13 +35,14 @@
 
             </div>
         </div>
-
+        <img src="{{asset('images/line_footer.webp')}}" width="100%">
+        <a href="#" class="btn-back-to-top scrollto btn btn-icon btn-dark shadow-light mb-4 mr-4" tabindex="-1">
+            <i class="fas fa-chevron-up btn-icon-inner"></i>
+        </a>
         <div class="row">
             <div class="col-6">
-                <p class="text-center">Copyright © cigonist.com 2023. All rights reserved.</p>
-                <a href="#" class="btn-back-to-top scrollto btn btn-icon btn-dark shadow-light mb-4 mr-4" tabindex="-1">
-                    <i class="fas fa-chevron-up btn-icon-inner"></i>
-                </a>
+                <p class="text-center my-4">© 2023 CIGONIST All rights reserved.</p>
+
 
             </div>
             <div class="col-6">
@@ -49,23 +50,25 @@
                 <ul class="list-inline mb-8 d-inline-block">
 
                     <li class="list-inline-item mx-0">
-                        <a class="btn btn-sm btn-icon btn-soft-secondary text-gray-400" href="#!" tabindex="0">
+                        <a class="btn btn-sm btn-icon btn-soft-secondary m-2" href="#!" tabindex="0">
                             <img src="{{asset('images/Linkdin.webp')}}" width="32"/>
                         </a>
                     </li>
 
                     <li class="list-inline-item mx-0">
-                        <a class="btn btn-sm btn-icon btn-soft-secondary text-gray-400" href="#!" tabindex="0">
-                            <img src="{{asset('images/facebook.webp')}}" width="32"/>
-                        </a>
-                    </li>
-
-                    <li class="list-inline-item mx-0">
-                        <a class="btn btn-sm btn-icon btn-soft-secondary text-gray-400" href="#!" tabindex="0">
+                        <a class="btn btn-sm btn-icon btn-soft-secondary  m-2" href="#!" tabindex="0">
                             <img src="{{asset('images/instagram.webp')}}" width="32"/>
 
                         </a>
                     </li>
+
+                    <li class="list-inline-item mx-0">
+                        <a class="btn btn-sm btn-icon btn-soft-secondary m-2" href="#!" tabindex="0">
+                            <img src="{{asset('images/facebook.webp')}}" width="32"/>
+                        </a>
+                    </li>
+
+
 
 
                 </ul>

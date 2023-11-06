@@ -39,5 +39,10 @@ return [
     'Marketing' => "Marketing",
     'Marketing_info' => "Plan and execute global go-to-marketing strategies and
                     effective campaigns",
+
+    'search' => 'Search',
+    'RELATIVE_POST' => 'Relative Posts',
+    'category' => 'Category',
+    'readMore' => 'Read More',
 ];
 
