@@ -3,6 +3,33 @@ body {
     font-family: Montserrat;
 }
 
+/* Customize the scrollbar track */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Customize the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+    background: #ff7300; /* Change the color of the scrollbar thumb */
+    border-radius: 6px; /* Make the thumb rounder */
+}
+
+/* Customize the scrollbar track on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #c75b03; /* Change the color on hover */
+}
+
+/* Customize the scrollbar track */
+::-webkit-scrollbar-track {
+    background: #101010; /* Change the track color */
+}
+
+/* Customize the scrollbar track on hover */
+::-webkit-scrollbar-track:hover {
+    background: #111111; /* Change the track color on hover */
+}
+
+
 .reveal {
     position: relative;
     transform: translateY(150px);
@@ -40,10 +67,6 @@ body {
 }
 
 #cards_landscape_wrap-2 .card-flyer .image-box img {
-    -webkit-transition: all .9s ease;
-    -moz-transition: all .9s ease;
-    -o-transition: all .9s ease;
-    -ms-transition: all .9s ease;
     width: 100%;
     height: 300px;
     object-fit: cover;
@@ -51,11 +74,6 @@ body {
 
 #cards_landscape_wrap-2 .card-flyer:hover .image-box img {
     opacity: 0.7;
-    -webkit-transform: scale(1.15);
-    -moz-transform: scale(1.15);
-    -ms-transform: scale(1.15);
-    -o-transform: scale(1.15);
-    transform: scale(1.15);
 }
 
 #cards_landscape_wrap-2 .card-flyer .text-box {
@@ -286,7 +304,7 @@ footer ul {
 }
 
 .service_item:hover .middle {
-    transform: translate(-50%, 10%);
+
 }
 
 .text {
@@ -345,7 +363,7 @@ footer ul {
     padding-left: 70px;
     padding-right: 70px;
     color: white;
-    background-color: rgba(0,0,0,.8);
+    background-color: rgba(0, 0, 0, .8);
 }
 
 .btn-orange:hover {
@@ -386,8 +404,8 @@ footer ul {
     position: fixed;
     top: 25px;
     left: 0;
-    z-index: 1;
-    width: 90vw;
+    z-index: 1000;
+    width: 95vw;
 }
 
 .img_full {
@@ -453,4 +471,45 @@ footer ul {
 .how_we_are_text {
     padding-left: 172px;
     padding-right: 97px;
+}
+@media only screen and (max-width: 768px) {
+    .how_we_are_text {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+.menubar_icon {
+    color: white;
+    font-size: 36px;
+    z-index: 1;
+    position: relative;
+    top: 6px;
+    right: 8px;
+}
+
+.mobile_menu {
+    display: none;
+
+    background-color: black;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 100000;
+}
+
+.mobile_menu_button {
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid;
+}
+
+.close_btn {
+    font-size: 36px;
+    color: white;
+    position: relative;
+    top: 10px;
+    left: 10px;
 }

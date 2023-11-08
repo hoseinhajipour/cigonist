@@ -33,7 +33,7 @@
         </div>
     </div>
 
-    <h1 class="my-3 menu_active h2_title">{{__("messages.relative_post")}}</h1>
+    <h1 class="my-3 menu_active h2_title">{{__("messages.relative_posts")}}</h1>
     <div class="row my-3">
         @foreach($posts as $post)
             <div class="col-lg-3 col-12">
@@ -45,7 +45,7 @@
                     <div class="card-body text-center">
                         <b class="d-block my-3">{{$post->getTranslatedAttribute('title',App::getLocale(), 'fallbackLocale')}}</b>
                         <a href="{{route('post',["slug"=>$post->slug])}}"
-                           class="orange_btn">{{__("messages.readMore")}}</a>
+                           class="btn btn-primary">{{__("messages.readMore")}}</a>
                     </div>
                 </div>
             </div>

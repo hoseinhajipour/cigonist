@@ -1,6 +1,6 @@
 @section('seo')
     @include('meta::manager', [
-   'title'         => __("messages.blog") ." | ".setting('site.title'),
+   'title'         => __("messages.lastnews") ." | ".setting('site.title'),
    'description'   =>  setting('site.description'),
    'robots'=>'index,follow',
    'referrer'=>'origin',

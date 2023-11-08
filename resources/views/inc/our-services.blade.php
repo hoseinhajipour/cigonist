@@ -3,7 +3,7 @@
         <img src="{{asset('images/services.webp')}}" width="128">
     </div>
     <div class="row">
-        <div class="col-5 text-center p-10">
+        <div class="col-lg-5 col-12 text-center p-10">
             <div class="orange_border p-3 text-left black_bg">
                 <b class="yellow_color my-2">{{__("messages.Game Development")}}</b>
                 <p>
@@ -18,10 +18,10 @@
                 </p>
             </div>
         </div>
-        <div class="col-2 text-center">
+        <div class="col-lg-2 col-12 text-center">
             <img src="{{asset('images/platforms.webp')}}" width="50%">
         </div>
-        <div class="col-5 text-center p-10">
+        <div class="col-lg-5 col-12 text-center p-10">
 
             <div class="orange_border p-3 text-left black_bg">
                 <b class="yellow_color my-2">{{__("messages.APP Development")}}</b>
