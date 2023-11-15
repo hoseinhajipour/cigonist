@@ -1,6 +1,6 @@
 @section('seo')
     @include('meta::manager', [
-   'title'         => __("messages.games") ." | ".setting('site.title'),
+   'title'         => __("messages.GAMES") ." | ".setting('site.title'),
    'description'   =>  setting('site.description'),
    'robots'=>'index,follow',
    'referrer'=>'origin',
@@ -8,21 +8,26 @@
    'keywords'=>setting('site.keywords')
 ])
 @endsection
-<section>
-    <div class="row">
+<img src="{{asset('assets/images/photos/photo-1.jpg')}}"  width="100%" height="500">
+<section >
+
+    <div class="container">
         @foreach($games as $game)
-            <div class="col-12" style="background: url({{ Voyager::image($game->image_cover) }});background-size: cover;background-repeat: no-repeat">
-                <div class="container p-10">
-                    <div class="row">
-                        <div class="col-lg-6 col-12">
-                            <div class="text-white">{!! $game->body !!}</div>
-                            <a href="{{route('game',["slug"=>$game->slug])}}"
-                               class="btn btn-primary my-3">{{__("messages.readMore")}}</a>
-                        </div>
-                        <div class="col-lg-6 col-1 d-lg-block d-none"></div>
-                    </div>
+            <div class="row game_red_border my-10">
+                <div class="col-lg-6 col-12 game_orange_bg">
+                    <div class="my-3">{!! $game->body !!}</div>
                 </div>
+                <div class="col-lg-6 col-12 p-0">
+                    <img src="{{Voyager::image($game->image_cover)}}" width="100%"/>
+                    <a href="{{route('game',["slug"=>$game->slug])}}"
+                       class="readmore_btn">
+                        <img src="{{asset('images/ContentMore_Button.webp')}}" width="64">
+                    </a>
+                </div>
+
             </div>
         @endforeach
     </div>
+
+
 </section>

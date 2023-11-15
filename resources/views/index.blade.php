@@ -16,8 +16,7 @@
             </div>
             <div class="overlay-inner overlay-video">
                 <video autoplay muted loop>
-                    <source src="storage/{{ json_decode(setting('site.video_intro'))[0]->download_link}}"
-                            type="video/mp4">
+                    <source src="{{asset('vid/slider.mp4')}}">
                 </video>
             </div>
             <div class="overlay-inner bg-gray-900 opacity-90">

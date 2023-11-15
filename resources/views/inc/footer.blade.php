@@ -4,9 +4,6 @@
             <div class="col-lg-3 col-12">
                 <div class="d-flex">
                     <div>
-                        <img src="{{asset('images/logo_icon.webp')}}" width="64" class="m-2">
-                    </div>
-                    <div>
                         <img src="{{Voyager::image(setting('site.logo-white'))}}" alt="" class="img-fluid mb-5">
                         <p class="mb-5"><img
                                 src="{{asset('images/loc_icon.webp')}}"> {!! setting('site.description') !!}</p>
@@ -40,12 +37,11 @@
             <i class="fas fa-chevron-up btn-icon-inner"></i>
         </a>
         <div class="row">
-            <div class="col-6">
-                <p class="text-center my-4">© 2023 CIGONIST All rights reserved.</p>
-
+            <div class="col-6 text-left">
+                <p class="my-4">© 2023 CIGONIST All rights reserved.</p>
 
             </div>
-            <div class="col-6">
+            <div class="col-6 text-right">
                 <label class="orange_color">{{__("messages.Connectwithus")}}</label>
                 <ul class="list-inline mb-8 d-inline-block">
 

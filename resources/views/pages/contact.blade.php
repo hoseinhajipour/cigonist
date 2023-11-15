@@ -1,6 +1,6 @@
 @section('seo')
     @include('meta::manager', [
-   'title'         => __("messages.ContactUs") ." | ".setting('site.title'),
+   'title'         => __("messages.CONTACT US") ." | ".setting('site.title'),
    'description'   =>  setting('site.description'),
    'robots'=>'index,follow',
    'referrer'=>'origin',

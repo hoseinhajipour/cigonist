@@ -320,7 +320,7 @@ footer ul {
 }
 
 .white_box {
-    border-radius: 80px;
+    border-radius: 25px;
     background-color: white;
     color: black;
     overflow: hidden;
@@ -472,10 +472,20 @@ footer ul {
     padding-left: 172px;
     padding-right: 97px;
 }
+
+
+.platforms_icon {
+    width: 70%;
+}
+
 @media only screen and (max-width: 768px) {
     .how_we_are_text {
         padding-left: 10px;
         padding-right: 10px;
+    }
+
+    .platforms_icon {
+        width: 60%;
     }
 }
 
@@ -512,4 +522,57 @@ footer ul {
     position: relative;
     top: 10px;
     left: 10px;
+}
+
+
+a.disabled {
+    pointer-events: none;
+    cursor: default;
+}
+
+.game_red_border {
+    background: url("/images/Games_ContentBorder.webp");
+    background-size: 100% 100%;
+    border-radius: 50px;
+    overflow: hidden;
+    border: 1px solid red;
+}
+
+.game_orange_bg {
+    background: url("/images/Games_Content_Design.webp");
+    background-size: 100% 100%;
+    color: black;
+}
+
+.readmore_btn {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.top_cover {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+}
+
+.orange_bg_service {
+    background-image: url("/images/Service_ContentDesign_right.webp");
+    background-size: 100% 100%;
+}
+
+.service_padding {
+    padding-right: 150px;
+    padding-top: 10px;
+}
+
+.readmore_02_btn {
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+}
+
+.service-title {
+    cursor: pointer;
 }
