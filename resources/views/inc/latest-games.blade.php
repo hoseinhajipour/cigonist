@@ -5,39 +5,29 @@
                 <img src="{{asset('images/games_bg.webp')}}" width="100%">
             </div>
             <div class="col-lg-10 col-12 p-10">
-                <div id="cards_landscape_wrap-2">
-                    <div class=" reveal">
-                        <div class="row">
-                            @forelse($games as $game)
-                                <div class="col-xs-4 col-sm-6 col-md-3 col-lg-3 p-1">
-                                    <a href="">
-                                        <div class="card-flyer">
-                                            <div class="text-box">
-                                                <div class="image-box">
-                                                    <a href="{{route('game',["slug"=>$game->slug])}}">
-                                                        <img src="{{ Voyager::image($game->image) }}" alt=""/>
-                                                    </a>
-                                                </div>
-                                                <div class="text-container">
-                                                    <a href="{{route('game',["slug"=>$game->slug])}}">
-                                                        <h6>{{$game->getTranslatedAttribute('title',App::getLocale(), 'fallbackLocale')}}</h6>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                @endforeach
 
+                <div class="row">
+                    @foreach($games as $game)
+                        <div class="col-xs-4 col-sm-6 col-md-3 col-lg-3 position-relative">
+                            <div>
+                                <a href="{{route('game',["slug"=>$game->slug])}}" class="game_card">
+                                    <img src="{{ Voyager::image($game->image) }}" width="100%"/>
+
+                                </a>
+                                <a href="{{route('game',["slug"=>$game->slug])}}" class="game_info">
+                                    <label class="d-block">{{$game->title}}</label>
+                                    <div class="d-block">More</div>
+                                </a>
+                            </div>
                         </div>
-                    </div>
+                    @endforeach
+
                 </div>
+
             </div>
 
         </div>
     </div>
-
-
 
 
 </section>

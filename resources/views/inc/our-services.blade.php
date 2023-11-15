@@ -6,9 +6,13 @@
         <div class="col-lg-5 col-12 text-center p-5">
             @foreach($lefts as $service)
                 <div class="orange_border p-3 text-left black_bg my-5">
-                    <b class="yellow_color my-2 service-title">{{$service->title}}</b>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <b class="yellow_color my-2 service-title">{{$service->getTranslatedAttribute('title',$language, 'fallbackLocale')}}</b>
+                        <span class="fa fa-times close-button" style="display: none;"></span>
+                    </div>
                     <div class="service-body" style="display: none;">
                         {!! $service->body !!}
+                        <a href="{{route('OurSolution')}}" class="btn btn-primary">{{__("messages.SeeMore")}}</a>
                     </div>
                 </div>
             @endforeach
@@ -19,9 +23,13 @@
         <div class="col-lg-5 col-12 text-center p-5">
             @foreach($rights as $service)
                 <div class="orange_border p-3 text-left black_bg my-5">
-                    <b class="yellow_color my-2 service-title">{{$service->title}}</b>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <b class="yellow_color my-2 service-title">{{$service->getTranslatedAttribute('title',$language, 'fallbackLocale')}}</b>
+                        <span class="fa fa-times close-button" style="display: none;"></span>
+                    </div>
                     <div class="service-body" style="display: none;">
                         {!! $service->body !!}
+                        <a href="{{route('OurSolution')}}" class="btn btn-primary">{{__("messages.SeeMore")}}</a>
                     </div>
                 </div>
             @endforeach
@@ -34,7 +42,22 @@
             // Handle click event on service titles
             $('.service-title').on('click', function () {
                 // Toggle the visibility of the corresponding service body with animation
-                $(this).next('.service-body').slideToggle('slow');
+                var serviceBody = $(this).closest('.orange_border').find('.service-body');
+                serviceBody.slideToggle('fast');
+
+                // Toggle the visibility of the close button
+                var closeButton = $(this).siblings('.close-button');
+                closeButton.toggle();
+            });
+
+            // Handle click event on close buttons
+            $('.close-button').on('click', function () {
+                // Toggle the visibility of the corresponding service body with animation
+                var serviceBody = $(this).closest('.orange_border').find('.service-body');
+                serviceBody.slideToggle('fast');
+
+                // Toggle the visibility of the close button
+                $(this).toggle();
             });
         });
     </script>

@@ -576,3 +576,76 @@ a.disabled {
 .service-title {
     cursor: pointer;
 }
+
+.game_card {
+    border: 1px solid #cb7a2d;
+    position: relative;
+    display: block;
+    margin-top: 10px;
+}
+
+.game_card:hover {
+    border: 2px solid #ff7b00;
+    transform: scale(1.01);
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+
+}
+
+.game_info {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+    width: 91%;
+    padding: 5px;
+    padding-left: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    pointer-events: none;
+}
+
+.game_info:hover {
+    color: #ff7b00;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.game_info::after {
+    content: ">";
+    position: absolute;
+    left: 69px;
+    bottom: 4px;
+
+}
+
+.game_card:hover + .game_info::after {
+    color: #ff7b00;
+    left: 110px;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.game_card:hover + .game_info {
+    color: #ff7b00;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
