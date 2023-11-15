@@ -11,5 +11,6 @@ class Service extends Model
 {
     use Resizable;
     use Translatable;
-    protected $translatable = ['title'];
+
+    protected $translatable = ['title', 'body'];
 }
