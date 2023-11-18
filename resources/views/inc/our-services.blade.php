@@ -3,9 +3,9 @@
         <img src="{{asset('images/services.webp')}}" width="256">
     </div>
     <div class="row">
-        <div class="col-lg-5 col-12 text-center p-5">
+        <div class="col-lg-5 col-12 text-center p-lg-10 p-5">
             @foreach($lefts as $service)
-                <div class="orange_border p-3 text-left black_bg my-5">
+                <div class="orange_border p-3 text-left black_bg my-7">
                     <div class="d-flex justify-content-between align-items-center">
                         <b class="yellow_color my-2 service-title">{{$service->getTranslatedAttribute('title',$language, 'fallbackLocale')}}</b>
                         <span class="fa fa-times close-button" style="display: none;"></span>
@@ -20,9 +20,9 @@
         <div class="col-lg-2 col-12 text-center">
             <img src="{{asset('images/platforms.webp')}}" class="platforms_icon my-5">
         </div>
-        <div class="col-lg-5 col-12 text-center p-5">
+        <div class="col-lg-5 col-12 text-center p-lg-10 p-5">
             @foreach($rights as $service)
-                <div class="orange_border p-3 text-left black_bg my-5">
+                <div class="orange_border p-3 text-left black_bg my-7">
                     <div class="d-flex justify-content-between align-items-center">
                         <b class="yellow_color my-2 service-title">{{$service->getTranslatedAttribute('title',$language, 'fallbackLocale')}}</b>
                         <span class="fa fa-times close-button" style="display: none;"></span>

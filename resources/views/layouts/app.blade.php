@@ -29,7 +29,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/style.css?v=1.9') }} " type="text/css">
+    <link rel="stylesheet" href="{{ asset('css/style.css?v=2.3') }} " type="text/css">
 
 
     <link rel="shortcut icon" type="image/x-icon" href="{{asset("images/favicon.webp")}}">

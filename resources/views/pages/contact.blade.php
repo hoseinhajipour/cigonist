@@ -11,7 +11,7 @@
 <section class="text-white m-0 p-0">
     <img src="{{asset('images/contact-bg.jpg')}}" width="100%"/>
     <div class="container">
-        <div class="card my-5 mx-20 border-0">
+        <div class="card my-5 mx-lg-20 mx-1 border-0">
             <div class="card-header text-center border-0">
                 <h3>{{__("messages.CONTACT US")}}</h3>
             </div>

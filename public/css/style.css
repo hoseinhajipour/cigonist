@@ -203,7 +203,13 @@ body {
     padding-bottom: 70px;
     position: relative;
 }
-
+@media only screen and (max-width: 768px) {
+    .background_img_01 {
+        background-size: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
 .copyright {
     background-color: #0d0f13;
     padding: 16px 0;
@@ -324,6 +330,12 @@ footer ul {
     background-color: white;
     color: black;
     overflow: hidden;
+
+    transition: transform 1s;
+}
+
+.white_box:hover {
+    transform: scale(1.05);
 }
 
 .swiper {
@@ -482,6 +494,7 @@ footer ul {
     .how_we_are_text {
         padding-left: 10px;
         padding-right: 10px;
+        transform: scale(0.8);
     }
 
     .platforms_icon {
@@ -536,6 +549,12 @@ a.disabled {
     border-radius: 50px;
     overflow: hidden;
     border: 1px solid red;
+
+    transition: transform 1s;
+}
+
+.game_red_border:hover {
+    transform: scale(1.05);
 }
 
 .game_orange_bg {
@@ -548,6 +567,12 @@ a.disabled {
     position: absolute;
     right: 10px;
     bottom: 10px;
+
+    transition: opacity 1s;
+}
+
+.readmore_btn:hover {
+    opacity: 0.5;
 }
 
 .top_cover {
@@ -571,6 +596,12 @@ a.disabled {
     position: absolute;
     right: 30px;
     bottom: 10px;
+
+    transition: opacity 1s;
+}
+
+.readmore_02_btn:hover {
+    opacity: 0.8;
 }
 
 .service-title {
