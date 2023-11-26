@@ -8,8 +8,7 @@
    'keywords'=>setting('site.keywords')
 ])
 @endsection
-
-<div class="container my-5">
-    <br/> <br/> <br/>
+<img src="{{asset('assets/images/photos/photo-1.jpg')}}" class="img-objectfit" width="100%" height="500">
+<div >
     <livewire:inc.our-services/>
 </div>

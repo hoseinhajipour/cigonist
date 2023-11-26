@@ -1,4 +1,4 @@
-<div class="orange_border my-3 text-white">
+<div class="orange_border_topdown my-3 text-white">
     <div class="text-center">
         <img src="{{asset('images/services.webp')}}" width="256">
     </div>

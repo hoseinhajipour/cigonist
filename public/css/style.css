@@ -29,6 +29,9 @@ body {
     background: #111111; /* Change the track color on hover */
 }
 
+a:hover {
+    color: #fc6a05;
+}
 
 .reveal {
     position: relative;
@@ -203,6 +206,7 @@ body {
     padding-bottom: 70px;
     position: relative;
 }
+
 @media only screen and (max-width: 768px) {
     .background_img_01 {
         background-size: 100%;
@@ -210,6 +214,7 @@ body {
         padding-bottom: 20px;
     }
 }
+
 .copyright {
     background-color: #0d0f13;
     padding: 16px 0;
@@ -326,16 +331,15 @@ footer ul {
 }
 
 .white_box {
-    border-radius: 25px;
+    border-radius: 35px;
     background-color: white;
     color: black;
     overflow: hidden;
-
     transition: transform 1s;
 }
 
 .white_box:hover {
-    transform: scale(1.05);
+    transform: scale(1.01);
 }
 
 .swiper {
@@ -355,6 +359,11 @@ footer ul {
 
 .orange_border {
     border: #9d7106 1px solid;
+}
+
+.orange_border_topdown {
+    border-top: #9d7106 1px solid;
+    border-bottom: #9d7106 1px solid;
 }
 
 .btn-outline-orange {
@@ -418,6 +427,12 @@ footer ul {
     left: 0;
     z-index: 1000;
     width: 95vw;
+}
+
+@media only screen and (max-width: 768px) {
+    .menu {
+        left: -10px;
+    }
 }
 
 .img_full {
@@ -519,6 +534,7 @@ footer ul {
     height: 100vh;
     width: 100vw;
     z-index: 100000;
+
 }
 
 .mobile_menu_button {
@@ -679,4 +695,12 @@ a.disabled {
     -ms-transition: all 0.2s ease-in;
     -o-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
+}
+
+.img-objectfit {
+    object-fit: cover;
+}
+
+.border-red-2 {
+    border: #de5735 2px solid;
 }

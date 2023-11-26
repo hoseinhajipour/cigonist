@@ -5,7 +5,7 @@
                 <img src="{{asset('images/menu_left.webp')}}" height="70">
             </a>
         </div>
-        <div class="col-6 d-lg-block d-none p-0 pl-60">
+        <div class="col-6 d-lg-block d-none p-0 pl-60 text-center">
             <img src="{{asset('images/menu_right.webp')}}" class="img_full" height="70">
 
             <a href="{{ route('games') }}"
@@ -73,11 +73,11 @@
 @push('javascript')
     <script>
         function openMenu() {
-            $(".mobile_menu").show();
+            $(".mobile_menu").fadeIn();
         }
 
         function closeMenu() {
-            $(".mobile_menu").hide();
+            $(".mobile_menu").fadeOut();
         }
     </script>
 @endpush

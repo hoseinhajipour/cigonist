@@ -44,5 +44,6 @@ return [
     'category' => 'Category',
     'readMore' => 'Read More',
     'lastnews' => 'Last News',
+    'notfound' => 'Not Found'
 ];
 

@@ -8,8 +8,8 @@
    'keywords'=>setting('site.keywords')
 ])
 @endsection
-
-<div class="container " style="margin-top: 60px">
+<img src="{{asset('assets/images/photos/photo-1.jpg')}}" class="img-objectfit" width="100%" height="500">
+<div class="container" >
     <h2 class="my-5 text-white h2_title">{{__("messages.lastnews")}}</h2>
 
     <div class="row">

@@ -1,3 +1,4 @@
+<img src="{{asset('assets/images/photos/photo-1.jpg')}}" class="img-objectfit" width="100%" height="500">
 <section class="text-white">
     <div class="container">
         <h1 class="h2_title">OUR SOLUTION</h1>
