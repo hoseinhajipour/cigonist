@@ -704,3 +704,8 @@ a.disabled {
 .border-red-2 {
     border: #de5735 2px solid;
 }
+
+.ptd_0 {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
