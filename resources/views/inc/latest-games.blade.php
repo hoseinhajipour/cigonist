@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-lg-3 col-12 p-lg-0">
                 <img src="{{asset('images/games_bg.webp')}}" class="d-lg-block d-md-none d-none" width="100%">
-                <img src="{{asset('images/mobile/Games.webp')}}" class="d-lg-none d-md-block d-block my-3" width="100%">
+                <img src="{{asset('images/mobile/Games.webp')}}" class="d-lg-none d-md-block d-block my-3 w-md-25 w-100" >
             </div>
             <div class="col-lg-9 col-12 p-lg-10 p-5 padding_fix">
 

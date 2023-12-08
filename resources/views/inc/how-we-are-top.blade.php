@@ -8,7 +8,7 @@
                     <img src="{{asset('/images/HowWEAre_Underline.webp')}}" class="d-block w-100 underline_how"/>
                 </div>
                 <div class="d-lg-none d-md-block d-block">
-                    <img src="{{asset('/images/mobile/how_we_are.webp')}}" width="100%" class="my-3"/>
+                    <img src="{{asset('/images/mobile/how_we_are.webp')}}"  class="my-3 w-md-25 w-100"/>
                 </div>
                 <p>{!! $info->value !!}</p>
                 <a href="#" class="btn btn-outline-orange">

@@ -4,8 +4,8 @@
             <div class="d-lg-block d-md-none d-none">
                 <img src="{{asset('images/services.webp')}}" width="300">
             </div>
-            <div class="d-lg-none d-md-block d-block">
-                <img src="{{asset('/images/mobile/services.webp')}}" class="my-5" width="100%"/>
+            <div class="d-lg-none d-md-block d-block text-left">
+                <img src="{{asset('/images/mobile/services.webp')}}" class="my-2 w-md-25 w-100"/>
             </div>
 
         </div>

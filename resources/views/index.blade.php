@@ -22,7 +22,6 @@
 
     <livewire:inc.how-we-are-top/>
 
-
     <livewire:inc.latest-games/>
 
     <div class="height_between"></div>

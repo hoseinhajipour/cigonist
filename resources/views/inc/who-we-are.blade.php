@@ -1,7 +1,7 @@
 <section class="container_big p-lg-10 p-0">
     <div class="background_img_01">
         <div class="d-lg-none d-md-block d-block">
-            <img src="{{asset('/images/mobile/Publish.webp')}}" width="100%"/>
+            <img src="{{asset('/images/mobile/Publish.webp')}}" class="w-md-25 w-100"/>
         </div>
 
         <div class="container text-white text-center how_we_are_text">

@@ -60,8 +60,10 @@
        class="mobile_menu_button {{ request()->is('blog') ? 'active_menu' : '' }}">{{__("messages.BLOG")}}</a>
     <a href="{{ route('PublishWithUs') }}"
        class="mobile_menu_button {{ request()->is('publish-with-us') ? 'active_menu' : '' }}">{{__("messages.PUBLISH")}}</a>
+    <!--
     <a href="{{ route('Careers') }}"
        class="mobile_menu_button {{ request()->is('careers') ? 'active_menu' : '' }}">{{__("messages.CAREER")}}</a>
+       -->
     <a href="{{ route('Contact') }}"
        class="mobile_menu_button {{ request()->is('contact') ? 'active_menu' : '' }}">{{__("messages.CONTACT")}}</a>
 
