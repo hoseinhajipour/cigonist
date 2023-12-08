@@ -1,54 +1,64 @@
 <div class="orange_border_topdown my-3 text-white">
     <div class="container_big">
         <div class="text-center">
-            <img src="{{asset('images/services.webp')}}" width="300">
+            <div class="d-lg-block d-md-none d-none">
+                <img src="{{asset('images/services.webp')}}" width="300">
+            </div>
+            <div class="d-lg-none d-md-block d-block">
+                <img src="{{asset('/images/mobile/services.webp')}}" class="my-5" width="100%"/>
+            </div>
+
         </div>
-        <div class="row">
-            <div class="col-lg-5 col-md-12 col-12 text-center">
-                @foreach($lefts as $service)
-                    <div class="orange_border service_title_row p-3 text-left black_bg my-7">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <b class="yellow_color my-2 service-title">{{$service->getTranslatedAttribute('title',$language, 'fallbackLocale')}}</b>
-                            <span class="fa fa-times close-button" style="display: none;"></span>
+        <div class="p-lg-8 p-0">
+            <div class="row">
+                <div class="col-lg-5 col-md-12 col-12 text-center">
+                    @foreach($lefts as $service)
+                        <div class="orange_border service_title_row p-3 text-left black_bg my-7">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <b class="yellow_color my-2 service-title">{{$service->getTranslatedAttribute('title',$language, 'fallbackLocale')}}</b>
+                                <span class="fa fa-times close-button" style="display: none;"></span>
+                            </div>
+                            <div class="service-short service-title pl-3">{!! $service->short !!}</div>
+                            <div class="service-body pl-3" style="display: none;">
+                                {!! $service->body !!}
+                                <a href="{{route('OurSolution')}}"
+                                   class="btn btn-primary">{{__("messages.SeeMore")}}</a>
+                            </div>
                         </div>
-                        <div class="service-short service-title pl-3">{!! $service->short !!}</div>
-                        <div class="service-body pl-3" style="display: none;">
-                            {!! $service->body !!}
-                            <a href="{{route('OurSolution')}}" class="btn btn-primary">{{__("messages.SeeMore")}}</a>
-                        </div>
-                    </div>
-                @endforeach
-            </div>
-            <div class="col-lg-2 col-md-12 col-12 text-center">
-                <div class="d-lg-block d-md-none d-none">
-                    <img src="{{asset('images/platforms.webp')}}" class="platforms_icon my-5">
+                    @endforeach
                 </div>
-                <div class="d-lg-none d-md-block d-block text-center">
-                    <img src="{{asset('images/platforms/platforms_01.png')}}">
-                    <marquee behavior="scroll" direction="left" scrollamount="5">
-                        <img src="{{asset('images/platforms/platforms_02.png')}}" class="mr-3 ml-3">
-                        <img src="{{asset('images/platforms/platforms_03.png')}}" class="mr-3 ml-3">
-                        <img src="{{asset('images/platforms/platforms_04.png')}}" class="mr-3 ml-3">
-                        <img src="{{asset('images/platforms/platforms_05.png')}}" class="mr-3 ml-3">
-                        <img src="{{asset('images/platforms/platforms_06.png')}}" class="mr-3 ml-3">
-                        <img src="{{asset('images/platforms/platforms_07.png')}}" class="mr-3 ml-3">
-                    </marquee>
-                </div>
-            </div>
-            <div class="col-lg-5 col-md-12 col-12 text-center">
-                @foreach($rights as $service)
-                    <div class="orange_border service_title_row p-3 text-left black_bg my-7">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <b class="yellow_color my-2 service-title">{{$service->getTranslatedAttribute('title',$language, 'fallbackLocale')}}</b>
-                            <span class="fa fa-times close-button" style="display: none;"></span>
-                        </div>
-                        <div class="service-short service-title pl-3">{!! $service->short !!}</div>
-                        <div class="service-body pl-3" style="display: none;">
-                            {!! $service->body !!}
-                            <a href="{{route('OurSolution')}}" class="btn btn-primary">{{__("messages.SeeMore")}}</a>
-                        </div>
+                <div class="col-lg-2 col-md-12 col-12 text-center">
+                    <div class="d-lg-block d-md-none d-none">
+                        <img src="{{asset('images/platforms.webp')}}" class="platforms_icon my-5">
                     </div>
-                @endforeach
+                    <div class="d-lg-none d-md-block d-block text-center">
+                        <img src="{{asset('images/platforms/platforms_01.png')}}">
+                        <marquee behavior="scroll" direction="left" scrollamount="5">
+                            <img src="{{asset('images/platforms/platforms_02.png')}}" class="mr-3 ml-3">
+                            <img src="{{asset('images/platforms/platforms_03.png')}}" class="mr-3 ml-3">
+                            <img src="{{asset('images/platforms/platforms_04.png')}}" class="mr-3 ml-3">
+                            <img src="{{asset('images/platforms/platforms_05.png')}}" class="mr-3 ml-3">
+                            <img src="{{asset('images/platforms/platforms_06.png')}}" class="mr-3 ml-3">
+                            <img src="{{asset('images/platforms/platforms_07.png')}}" class="mr-3 ml-3">
+                        </marquee>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 col-12 text-center">
+                    @foreach($rights as $service)
+                        <div class="orange_border service_title_row p-3 text-left black_bg my-7">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <b class="yellow_color my-2 service-title">{{$service->getTranslatedAttribute('title',$language, 'fallbackLocale')}}</b>
+                                <span class="fa fa-times close-button" style="display: none;"></span>
+                            </div>
+                            <div class="service-short service-title pl-3">{!! $service->short !!}</div>
+                            <div class="service-body pl-3" style="display: none;">
+                                {!! $service->body !!}
+                                <a href="{{route('OurSolution')}}"
+                                   class="btn btn-primary">{{__("messages.SeeMore")}}</a>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
             </div>
         </div>
     </div>

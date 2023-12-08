@@ -1,5 +1,5 @@
 body {
-    background-color: #131218;
+    background-color: #201f27;
     font-family: Calibri;
 }
 
@@ -436,7 +436,8 @@ footer ul {
     top: 25px;
     left: 0;
     z-index: 1000;
-    width: 95vw;
+    width: 100%;
+    font-size: 17px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -666,11 +667,10 @@ a.disabled {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     position: absolute;
-    left: 15px;
+    left: 0px;
     bottom: 0;
-    width: 91%;
-    padding: 5px;
-    padding-left: 20px;
+    width: 100%;
+    padding: 5px 5px 5px 20px;
     overflow: hidden;
     cursor: pointer;
     -webkit-transition: all 0.2s ease-in;
@@ -808,4 +808,9 @@ a.disabled {
     height: 100%;
     width: 100%;
     background-size: 100% 100%;
+}
+@media only screen and (max-width: 768px) {
+    .bg_loop_left::before {
+        display: none;
+    }
 }
