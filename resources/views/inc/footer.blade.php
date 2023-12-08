@@ -33,7 +33,7 @@
             </div>
         </div>
         <img src="{{asset('images/line_footer.webp')}}" width="100%">
-        <a href="#" class="btn-back-to-top scrollto btn btn-icon btn-dark shadow-light mb-4 mr-4" tabindex="-1">
+        <a href="#" class="btn-back-to-top scrollto btn btn-icon btn-dark shadow-light shadow mb-4 mr-4" tabindex="-1">
             <i class="fas fa-chevron-up btn-icon-inner"></i>
         </a>
         <div class="row">

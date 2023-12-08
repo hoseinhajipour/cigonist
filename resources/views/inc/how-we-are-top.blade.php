@@ -1,5 +1,5 @@
 <section class="no_padding container_big">
-    <div class="p-lg-10 p-0">
+    <div class="pr-lg-2 pl-lg-2 mt-lg-5  p-0">
         <div class="row">
             <div class="col-lg-6 col-12 text-white animate__animated animate__fadeInLeft ">
 
