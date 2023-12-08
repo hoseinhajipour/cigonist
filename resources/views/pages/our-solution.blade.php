@@ -5,10 +5,10 @@
         <div class="row">
             @foreach($services as $service)
                 <div class="col-12">
-                    <div class="white_box shadow my-3">
+                    <div class="white_box shadow my-6">
                         <div class="row">
                             <div class="col-lg-5 col-12">
-                                <img src="{{asset("images/Service_ContentDesign_top.webp")}}" class="top_cover">
+                                <img src="{{asset("images/Service_ContentDesign_top.webp")}}" class="top_cover d-lg-block d-none">
                                 <img src="{{Voyager::image($service->row_image)}}" width="100%" height="100%"/>
                             </div>
                             <div class="col-lg-7 col-12 orange_bg_service service_padding" >
