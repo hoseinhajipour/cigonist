@@ -150,10 +150,17 @@ a:hover {
 
 .h2_title {
     text-transform: uppercase;
-    border-bottom: 3px solid #ff8800;
-    padding-bottom: 10px;
     display: inline-block;
-    margin-bottom: 25px;
+    position: relative;
+}
+
+.HowWEAre {
+    width: 256px;
+}
+
+.underline_how {
+    position: relative;
+    left: -50px;
 }
 
 .img_box {
@@ -731,10 +738,13 @@ a.disabled {
 
 .game_row {
     cursor: pointer;
+    margin-top: 70px;
 }
-.service_title_row{
+
+.service_title_row {
     cursor: pointer;
 }
+
 .game_row:hover .readmore_02_btn {
     right: 20px;
     transition: 0.5s;
@@ -745,10 +755,12 @@ a.disabled {
     right: 50px;
     transition: 0.5s;
 }
-.height_between{
+
+.height_between {
     display: block;
     height: 60px;
 }
+
 @keyframes slideIn {
     from {
         transform: translateX(-100%);
@@ -763,4 +775,22 @@ a.disabled {
     height: 50px;
     position: relative;
     animation: slideIn 2s ease-in-out infinite;
+}
+
+.container_big {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 1920px) {
+    .container_big {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container_big {
+        width: 90%;
+    }
 }
