@@ -13,7 +13,7 @@
                             </div>
                             <div class="col-lg-7 col-12 orange_bg_service service_padding" >
                                 <h2>{{$service->title}}</h2>
-                                <p>{!! $service->body !!}</p>
+                                <p>{!! $service->short !!}</p>
                                 <a href="#"
                                    class="readmore_02_btn">
                                     <img src="{{asset('images/ContentMore_Button.webp')}}" width="64">

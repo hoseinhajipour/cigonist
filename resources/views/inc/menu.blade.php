@@ -5,7 +5,7 @@
                 <img src="{{asset('images/menu_left.webp')}}" height="70">
             </a>
         </div>
-        <div class="col-6 d-lg-block d-none p-0 pl-60 text-center">
+        <div class="col-8 d-lg-block d-none p-0 pl-60 text-center">
             <img src="{{asset('images/menu_right.webp')}}" class="img_full" height="70">
 
             <a href="{{ route('games') }}"
@@ -19,7 +19,7 @@
             <a href="{{ route('Contact') }}"
                class="link_menu {{ request()->is('contact') ? 'active_menu' : '' }}">{{__("messages.CONTACT")}}</a>
         </div>
-        <div class="col-4 d-lg-block d-none p-0 text-right pr-3 ">
+        <div class="col-2 d-lg-block d-none p-0 text-right pr-3 ">
             <img src="{{asset('images/menu_right.webp')}}" class="img_full" height="70">
 
             <a href="#" wire:click="change('ko')" class="lang_link {{$language== 'ko'? 'active_lang':''}}">KO</a>

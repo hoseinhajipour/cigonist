@@ -1,6 +1,6 @@
 body {
     background-color: #131218;
-    font-family: Montserrat;
+    font-family: Calibri;
 }
 
 /* Customize the scrollbar track */
@@ -200,15 +200,18 @@ a:hover {
 
 .background_img_01 {
     background-image: url(/images/PUBLISHWITHUS.webp);
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    padding-top: 120px;
-    padding-bottom: 70px;
+    background-position: center;
+    padding-top: 47px;
+    padding-bottom: 4px;
     position: relative;
+    height: 371px;
 }
 
 @media only screen and (max-width: 768px) {
     .background_img_01 {
+        background-image: unset;
         background-size: 100%;
         padding-top: 20px;
         padding-bottom: 20px;
@@ -457,10 +460,14 @@ footer ul {
     top: 25px;
     padding-left: 15px;
     padding-right: 5px;
+    font-size: 12px;
+    transition: 0.3s;
 }
 
 .lang_link:hover {
     color: orangered;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 .active_lang {
@@ -471,8 +478,10 @@ footer ul {
     border-left: 2px solid #9d9d9d;
 }
 
+User
 .active_menu {
     position: relative;
+    font-weight: bold;
 }
 
 .active_menu::after {
@@ -485,6 +494,10 @@ footer ul {
     background: linear-gradient(to left, orange, rgba(255, 165, 0, 0)); /* Orange gradient with zero alpha at right */
 }
 
+.link_menu:hover {
+    font-weight: bold;
+    transition: 0.3s ease; /* Adjusted the transition duration to 1s */
+}
 
 .black_text {
     color: black;
@@ -659,6 +672,7 @@ a.disabled {
     -o-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
     pointer-events: none;
+
 }
 
 .game_info:hover {
@@ -675,7 +689,7 @@ a.disabled {
     position: absolute;
     left: 69px;
     bottom: 4px;
-
+    transition: all 0.2s ease-in;
 }
 
 .game_card:hover + .game_info::after {
@@ -708,4 +722,45 @@ a.disabled {
 .ptd_0 {
     padding-top: 0px !important;
     padding-bottom: 0px !important;
+}
+
+.padding_fix {
+    padding-top: 25px !important;
+    padding-bottom: 0px !important;
+}
+
+.game_row {
+    cursor: pointer;
+}
+.service_title_row{
+    cursor: pointer;
+}
+.game_row:hover .readmore_02_btn {
+    right: 20px;
+    transition: 0.5s;
+}
+
+.game_row:not(:hover) .readmore_02_btn {
+    position: absolute;
+    right: 50px;
+    transition: 0.5s;
+}
+.height_between{
+    display: block;
+    height: 60px;
+}
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.animated-element {
+    width: 100px;
+    height: 50px;
+    position: relative;
+    animation: slideIn 2s ease-in-out infinite;
 }

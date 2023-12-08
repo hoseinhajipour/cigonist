@@ -15,7 +15,7 @@
         <div class="row">
             @foreach($games as $game)
 
-                <div class="white_box border-red-2 shadow my-5">
+                <div class="white_box border-red-2 shadow my-5 game_row">
                     <div class="row">
                         <div class="col-lg-6 col-12">
                             <img src="{{asset("images/Service_ContentDesign_top.webp")}}" class="top_cover">

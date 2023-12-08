@@ -25,6 +25,8 @@
 
     <livewire:inc.latest-games/>
 
+    <div class="height_between"></div>
+
     <livewire:inc.our-services/>
 
     <livewire:inc.who-we-are/>
