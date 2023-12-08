@@ -4,7 +4,7 @@
             <img src="{{asset('images/services.webp')}}" width="300">
         </div>
         <div class="row">
-            <div class="col-lg-5 col-12 text-center">
+            <div class="col-lg-5 col-md-12 col-12 text-center">
                 @foreach($lefts as $service)
                     <div class="orange_border service_title_row p-3 text-left black_bg my-7">
                         <div class="d-flex justify-content-between align-items-center">
@@ -19,11 +19,11 @@
                     </div>
                 @endforeach
             </div>
-            <div class="col-lg-2 col-12 text-center">
-                <div class="d-lg-block d-none">
+            <div class="col-lg-2 col-md-12 col-12 text-center">
+                <div class="d-lg-block d-md-none d-none">
                     <img src="{{asset('images/platforms.webp')}}" class="platforms_icon my-5">
                 </div>
-                <div class="d-lg-none d-block text-center">
+                <div class="d-lg-none d-md-block d-block text-center">
                     <img src="{{asset('images/platforms/platforms_01.png')}}">
                     <marquee behavior="scroll" direction="left" scrollamount="5">
                         <img src="{{asset('images/platforms/platforms_02.png')}}" class="mr-3 ml-3">
@@ -35,7 +35,7 @@
                     </marquee>
                 </div>
             </div>
-            <div class="col-lg-5 col-12 text-center">
+            <div class="col-lg-5 col-md-12 col-12 text-center">
                 @foreach($rights as $service)
                     <div class="orange_border service_title_row p-3 text-left black_bg my-7">
                         <div class="d-flex justify-content-between align-items-center">

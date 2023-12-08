@@ -1,7 +1,7 @@
 <section class="no_padding orange_border_topdown my-5">
-    <div class="container_padding">
+    <div class="container_big bg_loop_left">
         <div class="row">
-            <div class="col-lg-3 col-12 p-0">
+            <div class="col-lg-3 col-12 d-lg-block d-md-none d-none p-0">
                 <img src="{{asset('images/games_bg.webp')}}" width="100%">
             </div>
             <div class="col-lg-9 col-12 p-10 padding_fix">

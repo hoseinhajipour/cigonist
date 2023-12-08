@@ -1,5 +1,5 @@
-<section>
-    <div class="background_img_01 mx-lg-15 mx-0">
+<section class="container_big">
+    <div class="background_img_01">
         <div class="container text-white text-center how_we_are_text">
             <h2 class="black_text">{{__("messages.PUBLISHWITHUS")}}</h2>
             <p>{{__("messages.PUBLISHWITHUS_info")}}</p>

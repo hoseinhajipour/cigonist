@@ -1,4 +1,4 @@
-<section class="no_padding">
+<section class="no_padding container_big">
     <div class="p-10">
         <div class="row">
             <div class="col-lg-6 col-12 text-white animate__animated animate__fadeInLeft ">
@@ -13,7 +13,7 @@
                     {{__("messages.ABOUT US")}}
                 </a>
             </div>
-            <div class="col-lg-6 col-12 ">
+            <div class="col-lg-6 col-12 d-lg-block d-none ">
                 <img src="{{asset('images/how_we_are.webp')}}" class="animate__animated animate__fadeInRight"
                      width="90%">
             </div>

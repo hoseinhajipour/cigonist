@@ -794,3 +794,18 @@ a.disabled {
         width: 90%;
     }
 }
+
+.bg_loop_left {
+    position: relative;
+}
+
+.bg_loop_left::before {
+    content: '';
+    background-image: url("/images/bg_loop.webp");
+    position: absolute;
+    left: -100%;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%;
+}

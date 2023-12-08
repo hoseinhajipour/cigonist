@@ -1,6 +1,6 @@
 <nav class="menu">
     <div class="row">
-        <div class="col-lg-2 col-8 p-0" align="right">
+        <div class="col-lg-2 col-md-4 col-5 p-0" align="right">
             <a href="/">
                 <img src="{{asset('images/menu_left.webp')}}" height="70">
             </a>
@@ -27,9 +27,7 @@
             <a href="#" wire:click="change('cn')" class="lang_link border_left {{$language== 'cn'? 'active_lang':''}}">CN</a>
             <a href="#" wire:click="change('jp')" class="lang_link border_left {{$language== 'jp'? 'active_lang':''}}">JP</a>
         </div>
-
-
-        <div class="col-4 d-block d-lg-none p-0">
+        <div class="col-md-8 col-7 d-block d-lg-none p-0">
             <img src="{{asset('images/menu_right.webp')}}" class="img_full" height="70">
             <a href="#" onclick="openMenu()" class="float-right menubar_icon">
                 <i class="fa fa-bars " aria-hidden="true"></i>
