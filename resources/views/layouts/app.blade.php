@@ -17,30 +17,28 @@
     <link rel="stylesheet" href="{{ asset('assets/vendor/featherlight/featherlight.gallery.min.css') }}"
           type="text/css">
 
-    <!-- Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap"
         rel="stylesheet">
 
-    <!-- Theme CSS -->
+
     <link rel="stylesheet" href="{{ asset('assets/css/theme.css') }}">
     <link rel="stylesheet" href="{{ asset('css/animate.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/utilities.css') }}">
 
-    <!-- Custom CSS -->
+
     <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/style.css?v=5.3') }} " type="text/css">
+    <link rel="stylesheet" href="{{ asset('css/style.css?v=5.4') }} " type="text/css">
 
 
     <link rel="shortcut icon" type="image/x-icon" href="{{asset("images/favicon.webp")}}">
     <link rel="apple-touch-icon" href="{{asset("images/favicon.webp")}}"/>
 
-    <script src="{!!url('/js/jquery.min.js')!!}"></script>
-    <link href="{{ asset('css/jquery.fancybox.min.css') }}" rel="stylesheet">
-    <script src="{{ asset('js/jquery.fancybox.min.js') }}"></script>
-
     <link rel="stylesheet" href="{{url('/css/swiper-bundle.min.css')}}"/>
     <script src="{{ asset('js/swiper-bundle.min.js') }}"></script>
+
+
+    <link href="{{ asset('css/jquery.fancybox.css') }}" rel="stylesheet">
 
 </head>
 <body data-spy="scroll" data-target="#navbarCollapse">
@@ -66,8 +64,8 @@
 <script src="{{ asset('js/app.js') }}"></script>
 
 <!-- Libs JS -->
+<script src="{{ asset('/js/jquery-3.3.1.min.js') }}"></script>
 
-<script src="{{ asset('assets/vendor/jquery/dist/jquery.min.js') }}"></script>
 <script src="{{ asset('assets/vendor/popper.js/dist/popper.min.js') }}"></script>
 <script src="{{ asset('assets/vendor/bootstrap/dist/js/bootstrap.min.js') }}"></script>
 <script src="{{ asset('assets/vendor/jquery-validation/dist/jquery.validate.min.js') }}"></script>
@@ -82,6 +80,7 @@
 <script src="{{ asset('assets/vendor/typed.js/typed.min.js') }}"></script>
 <script src="{{ asset('assets/vendor/slick/slick.min.js') }}"></script>
 
+<script src="{{ asset('js/jquery.fancybox.min.js') }}"></script>
 <!-- Theme JS -->
 <script src="{{ asset('assets/js/main.js?v=1.0') }}"></script>
 

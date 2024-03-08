@@ -8,7 +8,7 @@
    'keywords'=>setting('site.keywords')
 ])
 @endsection
-<img src="{{asset('assets/images/photos/photo-1.jpg')}}" class="img-objectfit" width="100%" height="500">
-<div >
+<div>
+    <livewire:inc.slider-top/>
     <livewire:inc.our-services/>
 </div>

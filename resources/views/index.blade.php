@@ -9,16 +9,8 @@
 ])
 @endsection
 <main>
-    <section id="home" class="py-9 py-lg-10 min-vh-75 d-flex">
-        <div class="overlay overlay-advanced d-flex align-items-center">
-            <div class="overlay-inner overlay-video">
-                <video autoplay muted loop>
-                    <source src="{{asset('vid/slider.mp4')}}">
-                </video>
-            </div>
-        </div>
-    </section>
 
+    <livewire:inc.slider-top/>
 
     <livewire:inc.how-we-are-top/>
 

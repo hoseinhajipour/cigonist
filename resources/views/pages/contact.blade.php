@@ -9,7 +9,7 @@
 ])
 @endsection
 <section class="text-white m-0 p-0">
-    <img src="{{asset('images/contact-bg.jpg')}}" width="100%"/>
+    <livewire:inc.slider-top/>
     <div class="container">
         <div class="card my-5 mx-lg-20 mx-1 border-0">
             <div class="card-header text-center border-0">
@@ -17,7 +17,9 @@
             </div>
             <div class="card-body">
                 <div class="text-center">
-                    <p> {{__("messages.CONTACTUS_info")}} </p>
+                    <p>
+                    {!! \App\Models\Text::where("key","CONTACTUS_info")->first()->getTranslatedAttribute('value',$language, 'fallbackLocale') !!}
+                    </p>
                 </div>
 
                 <div class="p-5">
@@ -30,7 +32,9 @@
                     <textarea wire:model.defer="description" class="form-control my-3"
                               placeholder="{{ __('messages.Descriptionproject') }}"></textarea>
                     <input wire:model="checked" type="checkbox" class="big_checkbox">
-                    <label class="d-inline"> {{ __('messages.submitting_info') }}</label>
+                    <label class="d-inline">
+                        {!! \App\Models\Text::where("key","CONTACTUS_agreement")->first()->getTranslatedAttribute('value',$language, 'fallbackLocale') !!}
+                    </label>
                 </div>
 
             </div>

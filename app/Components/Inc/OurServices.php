@@ -15,8 +15,8 @@ class OurServices extends Component
 
     public function mount()
     {
-        $this->lefts = Service::where("status", "active")->take(3)->get();
-        $this->rights = Service::where("status", "active")->skip(3)->take(3)->get();
+        $this->lefts = Service::where("status", "active")->take(2)->get();
+        $this->rights = Service::where("status", "active")->skip(2)->take(2)->get();
 
         // Check if the 'locale' key exists in the session
         if (session()->has('locale')) {

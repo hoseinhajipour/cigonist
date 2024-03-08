@@ -11,9 +11,11 @@
                     <img src="{{asset('/images/mobile/how_we_are.webp')}}"  class="my-3 w-md-25 w-100"/>
                 </div>
                 <p>{!! $info->value !!}</p>
+                <!--
                 <a href="#" class="btn btn-outline-orange">
                     {{__("messages.ABOUT US")}}
                 </a>
+                -->
             </div>
             <div class="col-lg-6 col-12 d-lg-block d-none text-right">
                 <img src="{{asset('images/how_we_are.webp')}}" class="animate__animated animate__fadeInRight"

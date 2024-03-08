@@ -12,20 +12,25 @@
         <div class="p-lg-8 p-0">
             <div class="row">
                 <div class="col-lg-5 col-md-12 col-12 text-center">
-                    @foreach($lefts as $service)
-                        <div class="orange_border service_title_row p-3 text-left black_bg my-7">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <b class="yellow_color my-2 service-title">{{$service->getTranslatedAttribute('title',$language, 'fallbackLocale')}}</b>
-                                <span class="fa fa-times close-button" style="display: none;"></span>
-                            </div>
-                            <div class="service-short service-title pl-3">{!! $service->short !!}</div>
-                            <div class="service-body pl-3" style="display: none;">
-                                {!! $service->body !!}
+
+                    <div>
+                        @foreach($lefts as $service)
+                            <div class="orange_border service_title_row p-3 text-left black_bg my-7">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <b class="yellow_color my-2 service-title">{{$service->getTranslatedAttribute('title',$language, 'fallbackLocale')}}</b>
+                                    <span class="fa fa-times close-button" style="display: none;"></span>
+                                </div>
+                                <div class="service-short service-title pl-3">{!! $service->short !!}</div>
+                                <div class="service-body pl-3" style="display: none;">
+                                    {!! $service->body !!}
+                                    <!--
                                 <a href="{{route('OurSolution')}}"
                                    class="btn btn-primary">{{__("messages.SeeMore")}}</a>
+                                   -->
+                                </div>
                             </div>
-                        </div>
-                    @endforeach
+                        @endforeach
+                    </div>
                 </div>
                 <div class="col-lg-2 col-md-12 col-12 text-center">
                     <div class="d-lg-block d-md-none d-none">
@@ -44,20 +49,25 @@
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-12 col-12 text-center">
-                    @foreach($rights as $service)
-                        <div class="orange_border service_title_row p-3 text-left black_bg my-7">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <b class="yellow_color my-2 service-title">{{$service->getTranslatedAttribute('title',$language, 'fallbackLocale')}}</b>
-                                <span class="fa fa-times close-button" style="display: none;"></span>
-                            </div>
-                            <div class="service-short service-title pl-3">{!! $service->short !!}</div>
-                            <div class="service-body pl-3" style="display: none;">
-                                {!! $service->body !!}
+                    <div>
+                        @foreach($rights as $service)
+                            <div class="orange_border service_title_row p-3 text-left black_bg my-7">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <b class="yellow_color my-2 service-title">{{$service->getTranslatedAttribute('title',$language, 'fallbackLocale')}}</b>
+                                    <span class="fa fa-times close-button" style="display: none;"></span>
+                                </div>
+                                <div class="service-short service-title pl-3">{!! $service->short !!}</div>
+                                <div class="service-body pl-3" style="display: none;">
+                                    {!! $service->body !!}
+                                    <!--
                                 <a href="{{route('OurSolution')}}"
                                    class="btn btn-primary">{{__("messages.SeeMore")}}</a>
+
+                                   -->
+                                </div>
                             </div>
-                        </div>
-                    @endforeach
+                        @endforeach
+                    </div>
                 </div>
             </div>
         </div>

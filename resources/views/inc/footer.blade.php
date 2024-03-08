@@ -15,19 +15,20 @@
             <div class="col-lg-3 col-12">
                 <h4 class="bold_h4">{{__("messages.CONTACT US")}}</h4>
                 <div id="block-9" class="widget-2 widget widget_block widget_text">
-                    <p>E-Mail<br>info@cigonist.om</p>
+                    <p>E-Mail<br>info@cigonist.com</p>
                 </div>
             </div>
+            <!--
             <div class="col-lg-3 col-12">
                 <h4 class="bold_h4">{{__("messages.PUBLISHWITHUS")}}</h4>
                 <div id="block-9" class="widget-2 widget widget_block widget_text">
                     <p>E-Mail<br>publish@cigonist.com</p>
                 </div>
             </div>
-
+-->
             <div class="col-lg-3 col-12">
                 <h4 class="bold_h4">{{__("messages.PRIVACYPOLICY")}}</h4>
-                <a href="#" class="text-white d-block">Privacy Policy</a>
+                <a href="http://www.cigonist.com/PolicyPrivacy.html" class="text-white d-block">Privacy Policy</a>
                 <a href="#" class="text-white d-block">Cookie Policy</a>
 
             </div>
@@ -38,7 +39,7 @@
         </a>
         <div class="row">
             <div class="col-6 text-left">
-                <p class="my-4">© 2023 CIGONIST All rights reserved.</p>
+                <p class="my-4">©2024 CIGONIST All rights reserved.</p>
 
             </div>
             <div class="col-6 text-right">
@@ -46,20 +47,20 @@
                 <ul class="list-inline mb-8 d-inline-block">
 
                     <li class="list-inline-item mx-0">
-                        <a class="btn btn-sm btn-icon btn-soft-secondary m-2" href="#!" tabindex="0">
+                        <a class="btn btn-sm btn-icon btn-soft-secondary m-2" href="{{setting('footer.Linkdin')}}" tabindex="0">
                             <img src="{{asset('images/Linkdin.webp')}}" width="32"/>
                         </a>
                     </li>
 
                     <li class="list-inline-item mx-0">
-                        <a class="btn btn-sm btn-icon btn-soft-secondary  m-2" href="#!" tabindex="0">
+                        <a class="btn btn-sm btn-icon btn-soft-secondary  m-2" href="{{setting('footer.instagram')}}" tabindex="0">
                             <img src="{{asset('images/instagram.webp')}}" width="32"/>
 
                         </a>
                     </li>
 
                     <li class="list-inline-item mx-0">
-                        <a class="btn btn-sm btn-icon btn-soft-secondary m-2" href="#!" tabindex="0">
+                        <a class="btn btn-sm btn-icon btn-soft-secondary m-2" href="{{setting('footer.facebook')}}" tabindex="0">
                             <img src="{{asset('images/facebook.webp')}}" width="32"/>
                         </a>
                     </li>
